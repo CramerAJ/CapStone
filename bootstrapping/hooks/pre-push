@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# This script runs tests before any push to GitHub or server
+echo "Testing current branch..."
+
+cd www
+grunt tape
+
+if [ $? = 0 ]
+then
+    exit 0
+else
+    echo "Failed to pass tests! Get tests to pass and then try again..."
+    exit 1
+fi

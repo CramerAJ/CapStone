@@ -1,0 +1,21 @@
+#!/bin/bash
+
+GIT_WORK_TREE=/home/ubuntu/deploy git checkout -f staging
+
+cd /home/ubuntu/deploy/www
+sudo rm -rf node_modules
+sudo npm install
+cd /home/ubuntu/deploy/www/static_src
+sudo rm -rf bower_components
+cd /home/ubuntu/deploy/www
+bower install
+cd /home/ubuntu/deploy/www
+grunt build
+sudo stop nodeserver
+sudo cp /home/ubuntu/deploy/bootstrapping/nodeserver_nginx_live.conf /etc/nginx/sites-available/
+sudo service nginx reload
+sudo rm -rf /var/www/static /var/www/js /var/www/node_modules
+sudo cp -rf /home/ubuntu/deploy/www/static /var/www/
+sudo cp -rf /home/ubuntu/deploy/www/node_modules /var/www/
+sudo cp -rf /home/ubuntu/deploy/www/js /var/www/
+sudo start nodeserver
