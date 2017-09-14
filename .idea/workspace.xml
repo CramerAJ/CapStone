@@ -2,932 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05d3e71e-bed2-4bf4-8fe9-d27c12221ab6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/layers-2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/layers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/marker-icon-2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/marker-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/marker-shadow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leaflet-sidebar/.travis/deploy_key.pem.enc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leaflet-sidebar/leaflet-sidebar.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/custom_theme/img/logos/convertizer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/custom_theme/img/logos/estimateit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/custom_theme/img/logos/membermeister.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/custom_theme/img/logos/snapappointments.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/custom_theme/img/logos/solveforall.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/custom_theme/img/logos/thermofisher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/dist/leaflet.routing.icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/dist/routing-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/test/lib/jasmine-2.0.0/jasmine_favicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/dist/images/layers-2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/dist/images/layers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/dist/images/marker-icon-2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/dist/images/marker-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/dist/images/marker-shadow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrapping/.pgpass" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrapping/bootstrap.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrapping/gwi_v9999.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrapping/hooks/post-receive" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrapping/hooks/pre-push" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrapping/nodeserver.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrapping/nodeserver_monit.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrapping/nodeserver_nginx.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrapping/nodeserver_nginx_live.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrapping/pg_hba.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrapping/postgresql.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jquery-3.2.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leaflet-sidebar/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leaflet-sidebar/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leaflet-sidebar/.travis/deploy.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leaflet-sidebar/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leaflet-sidebar/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leaflet-sidebar/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leaflet-sidebar/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leaflet-sidebar/examples/bootstrap.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leaflet-sidebar/examples/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leaflet-sidebar/examples/listing-markers.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leaflet-sidebar/examples/two-sidebars.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leaflet-sidebar/gulpfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leaflet-sidebar/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leaflet-sidebar/src/L.Control.Sidebar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leaflet-sidebar/src/L.Control.Sidebar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leaflet-sidebar/src/L.Control.Sidebar.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leaflet-src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leaflet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leaflet.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leafletManual.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/maxcdn.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/.github/ISSUE_TEMPLATE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/Gruntfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/composer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/css/bootstrap-select.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/css/bootstrap-select.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/css/bootstrap-select.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/bootstrap-select.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/bootstrap-select.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/bootstrap-select.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-ar_AR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-ar_AR.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-bg_BG.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-bg_BG.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-cro_CRO.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-cro_CRO.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-cs_CZ.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-cs_CZ.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-da_DK.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-da_DK.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-de_DE.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-de_DE.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-en_US.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-en_US.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-es_CL.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-es_CL.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-es_ES.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-es_ES.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-eu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-eu.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-fa_IR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-fa_IR.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-fi_FI.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-fi_FI.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-fr_FR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-fr_FR.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-hu_HU.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-hu_HU.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-id_ID.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-id_ID.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-it_IT.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-it_IT.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-ko_KR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-ko_KR.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-lt_LT.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-lt_LT.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-nb_NO.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-nb_NO.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-nl_NL.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-nl_NL.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-pl_PL.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-pl_PL.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-pt_BR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-pt_BR.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-pt_PT.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-pt_PT.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-ro_RO.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-ro_RO.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-ru_RU.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-ru_RU.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-sk_SK.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-sk_SK.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-sl_SI.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-sl_SI.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-sv_SE.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-sv_SE.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-tr_TR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-tr_TR.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-ua_UA.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-ua_UA.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-zh_CN.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-zh_CN.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-zh_TW.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/dist/js/i18n/defaults-zh_TW.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/custom_theme/base.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/custom_theme/css/base.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/custom_theme/js/base.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/custom_theme/nav.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/custom_theme/toc.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/css/custom.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/css/bootstrap-select.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/css/bootstrap-select.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/css/bootstrap-select.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/bootstrap-select.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/bootstrap-select.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/bootstrap-select.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-ar_AR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-ar_AR.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-bg_BG.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-bg_BG.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-cro_CRO.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-cro_CRO.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-cs_CZ.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-cs_CZ.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-da_DK.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-da_DK.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-de_DE.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-de_DE.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-en_US.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-en_US.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-es_CL.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-es_CL.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-es_ES.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-es_ES.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-eu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-eu.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-fa_IR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-fa_IR.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-fi_FI.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-fi_FI.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-fr_FR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-fr_FR.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-hu_HU.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-hu_HU.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-id_ID.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-id_ID.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-it_IT.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-it_IT.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-ko_KR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-ko_KR.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-lt_LT.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-lt_LT.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-nb_NO.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-nb_NO.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-nl_NL.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-nl_NL.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-pl_PL.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-pl_PL.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-pt_BR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-pt_BR.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-pt_PT.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-pt_PT.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-ro_RO.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-ro_RO.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-ru_RU.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-ru_RU.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-sk_SK.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-sk_SK.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-sl_SI.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-sl_SI.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-sv_SE.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-sv_SE.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-tr_TR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-tr_TR.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-ua_UA.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-ua_UA.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-zh_CN.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-zh_CN.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-zh_TW.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/dist/js/i18n/defaults-zh_TW.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/examples.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/index.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/methods.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/options.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/playground/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/playground/plnkrOpener.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/docs/playground/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/docs/mkdocs.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/bootstrap-select.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/i18n/defaults-ar_AR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/i18n/defaults-bg_BG.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/i18n/defaults-cro_CRO.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/i18n/defaults-cs_CZ.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/i18n/defaults-da_DK.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/i18n/defaults-de_DE.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/i18n/defaults-en_US.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/i18n/defaults-es_CL.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/i18n/defaults-es_ES.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/i18n/defaults-eu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/i18n/defaults-fa_IR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/i18n/defaults-fi_FI.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/i18n/defaults-fr_FR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/i18n/defaults-hu_HU.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/i18n/defaults-id_ID.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/i18n/defaults-it_IT.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/i18n/defaults-ko_KR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/i18n/defaults-lt_LT.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/i18n/defaults-nb_NO.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/i18n/defaults-nl_NL.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/i18n/defaults-pl_PL.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/i18n/defaults-pt_BR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/i18n/defaults-pt_PT.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/i18n/defaults-ro_RO.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/i18n/defaults-ru_RU.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/i18n/defaults-sk_SK.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/i18n/defaults-sl_SI.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/i18n/defaults-sv_SE.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/i18n/defaults-tr_TR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/i18n/defaults-ua_UA.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/i18n/defaults-zh_CN.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/js/i18n/defaults-zh_TW.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/less/bootstrap-select.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/less/variables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/nuget/MyGet.ps1" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/nuget/bootstrap-select.nuspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/sass/bootstrap-select.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/sass/variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bootstrap-select/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/AUTHORS.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/dist/core.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.min.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.slim.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.slim.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.slim.min.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/external/sizzle/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/external/sizzle/dist/sizzle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/external/sizzle/dist/sizzle.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/external/sizzle/dist/sizzle.min.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/.eslintrc.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/jsonp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/load.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/parseXML.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/var/location.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/var/nonce.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/var/rquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/xhr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes/attr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes/classes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes/prop.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes/support.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes/val.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/callbacks.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/DOMEval.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/access.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/init.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/nodeName.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/parseHTML.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/ready-no-deferred.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/ready.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/readyException.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/stripAndCollapse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/support.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/var/rsingleTag.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/addGetHookIf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/adjustCSS.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/curCSS.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/hiddenVisibleSelectors.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/showHide.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/support.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/cssExpand.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/getStyles.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/isHiddenWithinTree.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/rmargin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/rnumnonpx.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/swap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/data/Data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/data/var/acceptData.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/data/var/dataPriv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/data/var/dataUser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/deferred.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/deferred/exceptionHook.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/deprecated.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/dimensions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/effects.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/effects/Tween.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/effects/animatedSelector.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/event.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/event/ajax.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/event/alias.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/event/focusin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/event/support.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/event/trigger.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/exports/amd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/exports/global.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/_evalUrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/buildFragment.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/getAll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/setGlobalEval.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/support.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/var/rcheckableType.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/var/rscriptType.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/var/rtagName.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/wrapMap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/offset.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/queue.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/queue/delay.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/selector-native.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/selector-sizzle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/selector.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/serialize.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/traversing.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/traversing/findFilter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/traversing/var/dir.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/traversing/var/rneedsContext.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/traversing/var/siblings.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/ObjectFunctionString.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/arr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/class2type.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/concat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/document.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/documentElement.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/fnToString.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/getProto.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/hasOwn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/indexOf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/pnum.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/push.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/rcssNum.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/rnothtmlwhite.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/slice.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/support.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/toString.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/wrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-map/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-map/LICENSE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-map/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-map/build.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-map/example.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-map/example.jss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-map/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-map/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-map/test/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/LICENSE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/dist/leaflet-routing-machine.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/dist/leaflet-routing-machine.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/dist/leaflet.routing.icons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/examples/Control.Geocoder.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/examples/config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/examples/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/examples/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/examples/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/examples/localized.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/examples/localized.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/examples/mapbox.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/examples/mapbox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/scripts/publish.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/src/autocomplete.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/src/control.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/src/error-control.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/src/formatter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/src/geocoder-element.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/src/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/src/itinerary-builder.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/src/itinerary.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/src/line.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/src/localization.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/src/mapbox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/src/osrm-v1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/src/osrm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/src/plan.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/src/waypoint.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/test/SpecRunner.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/test/lib/jasmine-2.0.0/boot.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/test/lib/jasmine-2.0.0/console.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/test/lib/jasmine-2.0.0/jasmine-html.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/test/lib/jasmine-2.0.0/jasmine.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/test/lib/jasmine-2.0.0/jasmine.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/test/spec/formatter-spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet-routing-machine/test/spec/osrmv1-spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/FAQ.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/Jakefile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/PLUGIN-GUIDE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/build/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/build/build.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/build/build.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/build/component.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/build/deps.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/build/hintrc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/build/publish.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/component.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/css/mobile.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/css/screen.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/hacks/jitter.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/leaflet-include.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/map/canvas.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/map/controls.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/map/geolocation.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/map/iframe.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/map/image-overlay.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/map/map-mobile.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/map/map.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/map/max-bounds.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/map/opacity.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/map/scroll.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/map/simple-proj.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/map/wms-marble.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/map/wms.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/map/zoomlevels.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/tests/add_remove_layers.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/tests/bringtoback.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/tests/canvasloop.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/tests/click_on_canvas.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/tests/click_on_canvas_broken.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/tests/dragging_and_copyworldjump.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/tests/opacity.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/tests/popupcontextmenuclicks.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/tests/remove_while_dragging.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/tests/removetilewhilepan.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/tests/reuse_popups.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/tests/rtl.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/tests/rtl2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/tests/set_icon_reuse_dom.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/tests/setview_marker_setview.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/tests/svg_clicks.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/vector/bounds-extend.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/vector/feature-group-bounds.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/vector/geojson-sample.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/vector/geojson.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/vector/rectangle.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/vector/route.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/vector/touchzoomemu.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/vector/us-states.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/vector/vector-bounds.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/vector/vector-canvas.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/vector/vector-mobile.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/vector/vector-simple.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/debug/vector/vector.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/dist/leaflet-src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/dist/leaflet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/dist/leaflet.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/after.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/before.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/expect.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/karma.conf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/sinon.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/spec.hintrc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/suites/LeafletSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/suites/SpecHelper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/suites/control/Control.AttributionSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/suites/control/Control.LayersSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/suites/control/Control.ScaleSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/suites/core/ClassSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/suites/core/EventsSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/suites/core/UtilSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/suites/dom/DomEventSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/suites/dom/DomUtilSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/suites/dom/PosAnimationSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/suites/geo/CRSSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/suites/geo/LatLngBoundsSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/suites/geo/LatLngSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/suites/geo/ProjectionSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/suites/geometry/BoundsSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/suites/geometry/LineUtilSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/suites/geometry/PointSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/suites/geometry/PolyUtilSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/suites/geometry/TransformationSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/suites/layer/FeatureGroupSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/suites/layer/GeoJSONSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/suites/layer/LayerGroupSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/suites/layer/PopupSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/suites/layer/TileLayerSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/suites/layer/marker/MarkerSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/suites/layer/vector/CircleMarkerSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/suites/layer/vector/CircleSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/suites/layer/vector/PolygonSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/suites/layer/vector/PolylineGeometrySpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/suites/layer/vector/PolylineSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/suites/map/MapSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/spec/suites/map/handler/Map.DragSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/Leaflet.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/control/Control.Attribution.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/control/Control.Layers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/control/Control.Scale.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/control/Control.Zoom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/control/Control.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/copyright.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/core/Browser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/core/Class.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/core/Events.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/core/Handler.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/core/Util.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/dom/DomEvent.DoubleTap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/dom/DomEvent.Pointer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/dom/DomEvent.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/dom/DomUtil.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/dom/Draggable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/dom/PosAnimation.Timer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/dom/PosAnimation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/geo/LatLng.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/geo/LatLngBounds.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/geo/crs/CRS.EPSG3395.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/geo/crs/CRS.EPSG3857.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/geo/crs/CRS.EPSG4326.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/geo/crs/CRS.Simple.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/geo/crs/CRS.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/geo/projection/Projection.LonLat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/geo/projection/Projection.Mercator.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/geo/projection/Projection.SphericalMercator.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/geo/projection/Projection.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/geometry/Bounds.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/geometry/LineUtil.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/geometry/Point.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/geometry/PolyUtil.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/geometry/Transformation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/images/layers.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/images/marker.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/layer/FeatureGroup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/layer/GeoJSON.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/layer/ImageOverlay.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/layer/LayerGroup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/layer/Popup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/layer/marker/DivIcon.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/layer/marker/Icon.Default.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/layer/marker/Icon.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/layer/marker/Marker.Drag.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/layer/marker/Marker.Popup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/layer/marker/Marker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/layer/tile/TileLayer.Anim.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/layer/tile/TileLayer.Canvas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/layer/tile/TileLayer.WMS.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/layer/tile/TileLayer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/layer/vector/Circle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/layer/vector/CircleMarker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/layer/vector/MultiPoly.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/layer/vector/Path.Popup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/layer/vector/Path.SVG.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/layer/vector/Path.VML.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/layer/vector/Path.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/layer/vector/Polygon.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/layer/vector/Polyline.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/layer/vector/Rectangle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/layer/vector/canvas/Circle.Canvas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/layer/vector/canvas/CircleMarker.Canvas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/layer/vector/canvas/Path.Canvas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/layer/vector/canvas/Polygon.Canvas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/layer/vector/canvas/Polyline.Canvas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/map/Map.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/map/anim/Map.PanAnimation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/map/anim/Map.ZoomAnimation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/map/ext/Map.Geolocation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/map/handler/Map.BoxZoom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/map/handler/Map.DoubleClickZoom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/map/handler/Map.Drag.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/map/handler/Map.Keyboard.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/map/handler/Map.ScrollWheelZoom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/map/handler/Map.Tap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/leaflet/src/map/handler/Map.TouchZoom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/.eslintrc.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/instructions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/instructions/de.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/instructions/en.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/instructions/fr.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/instructions/nl.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/instructions/zh-Hans.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/scripts/generate_fixtures.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/constants.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/arrive/left.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/arrive/no_modifier.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/arrive/no_modifier_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/arrive/right.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/arrive/sharp_left.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/arrive/sharp_right.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/arrive/slight_left.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/arrive/slight_right.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/arrive/straight.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/arrive/uturn.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/continue/left.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/continue/left_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/continue/right.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/continue/right_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/continue/sharp_left.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/continue/sharp_left_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/continue/sharp_right.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/continue/sharp_right_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/continue/slight_left.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/continue/slight_left_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/continue/slight_right.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/continue/slight_right_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/continue/straight.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/continue/straight_destinations.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/continue/straight_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/continue/uturn.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/continue/uturn_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/depart/left.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/depart/left_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/depart/no_modifier.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/depart/no_modifier_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/depart/right.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/depart/right_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/depart/sharp_left.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/depart/sharp_left_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/depart/sharp_right.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/depart/sharp_right_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/depart/slight_left.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/depart/slight_left_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/depart/slight_right.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/depart/slight_right_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/depart/straight.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/depart/straight_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/depart/straight_northwest.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/depart/straight_south.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/depart/uturn.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/depart/uturn_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/end_of_road/left.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/end_of_road/left_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/end_of_road/right.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/end_of_road/right_destinations.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/end_of_road/right_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/end_of_road/sharp_left.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/end_of_road/sharp_left_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/end_of_road/sharp_right.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/end_of_road/sharp_right_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/end_of_road/slight_left.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/end_of_road/slight_left_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/end_of_road/slight_right.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/end_of_road/slight_right_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/end_of_road/straight.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/end_of_road/straight_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/end_of_road/uturn.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/end_of_road/uturn_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/fork/left.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/fork/left_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/fork/right.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/fork/right_destinations.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/fork/right_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/fork/sharp_left.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/fork/sharp_left_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/fork/sharp_right.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/fork/sharp_right_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/fork/slight_left.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/fork/slight_left_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/fork/slight_right.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/fork/slight_right_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/fork/straight.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/fork/straight_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/fork/uturn.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/fork/uturn_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/merge/left_default.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/merge/left_destination.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/merge/left_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/merge/right_default.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/merge/right_destination.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/merge/right_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/merge/sharp_left_default.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/merge/sharp_left_destination.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/merge/sharp_left_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/merge/sharp_right_default.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/merge/sharp_right_destination.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/merge/sharp_right_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/merge/slight_left_default.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/merge/slight_left_destination.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/merge/slight_left_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/merge/slight_right_default.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/merge/slight_right_destination.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/merge/slight_right_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/merge/straight_default.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/merge/straight_destination.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/merge/straight_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/merge/uturn_default.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/merge/uturn_destination.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/merge/uturn_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/modes/driving_turn_left.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/modes/ferry_fork_left_default.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/modes/ferry_fork_left_destination.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/modes/ferry_fork_left_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/modes/ferry_turn_left_default.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/modes/ferry_turn_left_destination.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/modes/ferry_turn_left_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/new_name/left.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/new_name/left_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/new_name/right.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/new_name/right_destinations.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/new_name/right_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/new_name/sharp_left.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/new_name/sharp_left_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/new_name/sharp_right.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/new_name/sharp_right_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/new_name/slight_left.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/new_name/slight_left_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/new_name/slight_right.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/new_name/slight_right_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/new_name/straight.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/new_name/straight_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/new_name/uturn.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/new_name/uturn_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/notification/left.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/notification/left_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/notification/right.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/notification/right_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/notification/sharp_left.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/notification/sharp_left_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/notification/sharp_right.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/notification/sharp_right_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/notification/slight_left.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/notification/slight_left_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/notification/slight_right.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/notification/slight_right_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/notification/straight.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/notification/straight_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/notification/uturn.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/notification/uturn_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/off_ramp/left.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/off_ramp/left_destinations.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/off_ramp/left_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/off_ramp/right.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/off_ramp/right_destinations.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/off_ramp/right_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/off_ramp/sharp_left.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/off_ramp/sharp_left_destinations.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/off_ramp/sharp_left_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/off_ramp/sharp_right.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/off_ramp/sharp_right_destinations.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/off_ramp/sharp_right_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/off_ramp/slight_left.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/off_ramp/slight_left_destinations.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/off_ramp/slight_left_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/off_ramp/slight_right.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/off_ramp/slight_right_destinations.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/off_ramp/slight_right_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/off_ramp/straight.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/off_ramp/straight_destinations.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/off_ramp/straight_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/off_ramp/uturn.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/off_ramp/uturn_destinations.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/off_ramp/uturn_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/on_ramp/left.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/on_ramp/left_destinations.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/on_ramp/left_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/on_ramp/right.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/on_ramp/right_destinations.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/on_ramp/right_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/on_ramp/sharp_left.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/on_ramp/sharp_left_destinations.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/on_ramp/sharp_left_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/on_ramp/sharp_right.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/on_ramp/sharp_right_destinations.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/on_ramp/sharp_right_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/on_ramp/slight_left.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/on_ramp/slight_left_destinations.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/on_ramp/slight_left_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/on_ramp/slight_right.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/on_ramp/slight_right_destinations.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/on_ramp/slight_right_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/on_ramp/straight.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/on_ramp/straight_destinations.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/on_ramp/straight_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/on_ramp/uturn.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/on_ramp/uturn_destinations.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/on_ramp/uturn_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/other/invalid_type.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/other/way_name_ref.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/other/way_name_ref_destinations.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/other/way_name_ref_mapbox_hack_1.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/other/way_name_ref_mapbox_hack_2.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/other/way_name_ref_mapbox_hack_3.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/other/way_name_ref_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/rotary/default_default.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/rotary/default_destination.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/rotary/default_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/rotary/exit_10.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/rotary/exit_11.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/rotary/exit_1_default.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/rotary/exit_1_destination.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/rotary/exit_1_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/rotary/exit_2.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/rotary/exit_3.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/rotary/exit_4.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/rotary/exit_5.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/rotary/exit_6.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/rotary/exit_7.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/rotary/exit_8.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/rotary/exit_9.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/rotary/name_default.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/rotary/name_destination.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/rotary/name_exit_default.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/rotary/name_exit_destination.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/rotary/name_exit_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/rotary/name_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/roundabout/default_default.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/roundabout/default_destination.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/roundabout/default_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/roundabout/exit_default.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/roundabout/exit_destination.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/roundabout/exit_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/roundabout_turn/left.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/roundabout_turn/left_destinations.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/roundabout_turn/left_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/roundabout_turn/right.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/roundabout_turn/right_destinations.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/roundabout_turn/right_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/roundabout_turn/sharp_left.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/roundabout_turn/sharp_left_destinations.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/roundabout_turn/sharp_left_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/roundabout_turn/sharp_right.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/roundabout_turn/sharp_right_destinations.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/roundabout_turn/sharp_right_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/roundabout_turn/slight_left.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/roundabout_turn/slight_left_destinations.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/roundabout_turn/slight_left_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/roundabout_turn/slight_right.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/roundabout_turn/slight_right_destinations.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/roundabout_turn/slight_right_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/roundabout_turn/straight.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/roundabout_turn/straight_destinations.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/roundabout_turn/straight_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/roundabout_turn/uturn.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/roundabout_turn/uturn_destinations.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/roundabout_turn/uturn_no_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/turn/left_default.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/turn/left_destination.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/turn/left_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/turn/right_default.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/turn/right_destination.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/turn/right_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/turn/sharp_left_default.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/turn/sharp_left_destination.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/turn/sharp_left_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/turn/sharp_right_default.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/turn/sharp_right_destination.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/turn/sharp_right_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/turn/slight_left_default.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/turn/slight_left_destination.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/turn/slight_left_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/turn/slight_right_default.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/turn/slight_right_destination.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/turn/slight_right_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/turn/straight_default.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/turn/straight_destination.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/turn/straight_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/turn/uturn_default.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/turn/uturn_destination.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/turn/uturn_name.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/use_lane/o.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/use_lane/ooo.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/use_lane/oooxxo.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/use_lane/oox.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/use_lane/ooxx.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/use_lane/oxo.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/use_lane/xoo.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/use_lane/xox.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/use_lane/xxoo.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/use_lane/xxooxx.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures/v5/use_lane/xxoxo.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/fixtures_test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/index_test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/instructions_test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/osrm-text-instructions/test/update_fixtures_test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -942,7 +17,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="pre-push" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bootstrapping/hooks/pre-push">
           <provider selected="true" editor-type-id="text-editor">
@@ -953,16 +28,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="166" column="27" lean-forward="false" selection-start-line="166" selection-start-column="27" selection-end-line="166" selection-end-column="27" />
+            <state relative-caret-position="409">
+              <caret line="159" column="14" lean-forward="false" selection-start-line="159" selection-start-column="14" selection-end-line="159" selection-end-column="14" />
               <folding>
-                <element signature="e#4461#4990#0" expanded="false" />
-                <element signature="e#5024#5093#0" expanded="false" />
-                <element signature="e#5209#5253#0" expanded="false" />
-                <marker date="1504279580000" expanded="true" signature="3992:3998" ph="©" />
+                <element signature="e#4297#4826#0" expanded="false" />
+                <element signature="e#4860#4929#0" expanded="false" />
+                <element signature="e#5045#5089#0" expanded="false" />
+                <marker date="1505398517000" expanded="true" signature="3828:3834" ph="©" />
               </folding>
             </state>
           </provider>
@@ -978,14 +53,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="leaflet.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="leaflet.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/leaflet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="5" column="11738" lean-forward="false" selection-start-line="5" selection-start-column="11663" selection-end-line="5" selection-end-column="11738" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="5" column="9986" lean-forward="false" selection-start-line="5" selection-start-column="9986" selection-end-line="5" selection-end-column="9986" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1024,7 +97,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1280" />
+    <option name="width" value="1138" />
     <option name="height" value="773" />
   </component>
   <component name="ProjectView">
@@ -1042,8 +115,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1058,6 +129,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1129,6 +202,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -1170,32 +249,35 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1504278833331</updated>
-      <workItem from="1504278835008" duration="816000" />
+      <workItem from="1504278835008" duration="902000" />
+      <workItem from="1504799298055" duration="292000" />
+      <workItem from="1505139892420" duration="508000" />
+      <workItem from="1505398447040" duration="80000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="816000" />
+    <option name="totallyTimeSpent" value="1782000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="773" extended-state="6" />
+    <frame x="0" y="23" width="1138" height="773" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1218,15 +300,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/leaflet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leaflet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="9986" lean-forward="false" selection-start-line="5" selection-start-column="9986" selection-end-line="5" selection-end-column="9986" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
+        <state relative-caret-position="2745">
+          <caret line="183" column="0" lean-forward="false" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
+          <folding>
+            <element signature="e#4297#4826#0" expanded="false" />
+            <element signature="e#4860#4929#0" expanded="false" />
+            <element signature="e#5045#5089#0" expanded="false" />
+            <marker date="1505398517000" expanded="true" signature="3828:3834" ph="©" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrapping/hooks/pre-push">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2490">
           <caret line="166" column="27" lean-forward="false" selection-start-line="166" selection-start-column="27" selection-end-line="166" selection-end-column="27" />
           <folding>
-            <element signature="e#4461#4990#0" expanded="false" />
-            <element signature="e#5024#5093#0" expanded="false" />
-            <element signature="e#5209#5253#0" expanded="false" />
-            <marker date="1504279580000" expanded="true" signature="3992:3998" ph="©" />
+            <element signature="e#4297#4826#0" expanded="false" />
+            <element signature="e#4860#4929#0" expanded="false" />
+            <element signature="e#5045#5089#0" expanded="false" />
+            <marker date="1505398517000" expanded="true" signature="3828:3834" ph="©" />
           </folding>
         </state>
       </provider>
@@ -1239,7 +358,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
+    <entry file="file://$PROJECT_DIR$/leaflet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="9986" lean-forward="false" selection-start-line="5" selection-start-column="9986" selection-end-line="5" selection-end-column="9986" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrapping/hooks/pre-push">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2490">
+          <caret line="166" column="27" lean-forward="false" selection-start-line="166" selection-start-column="27" selection-end-line="166" selection-end-column="27" />
+          <folding>
+            <element signature="e#4297#4826#0" expanded="false" />
+            <element signature="e#4860#4929#0" expanded="false" />
+            <element signature="e#5045#5089#0" expanded="false" />
+            <marker date="1505398517000" expanded="true" signature="3828:3834" ph="©" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leaflet.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1249,10 +397,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/leaflet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="5" column="11738" lean-forward="false" selection-start-line="5" selection-start-column="11663" selection-end-line="5" selection-end-column="11738" />
+        <state relative-caret-position="75">
+          <caret line="5" column="9986" lean-forward="true" selection-start-line="5" selection-start-column="9986" selection-end-line="5" selection-end-column="9986" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrapping/hooks/pre-push">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json" />
+    <entry file="file://$PROJECT_DIR$/leaflet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="9986" lean-forward="false" selection-start-line="5" selection-start-column="9986" selection-end-line="5" selection-end-column="9986" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leaflet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="159" column="14" lean-forward="false" selection-start-line="159" selection-start-column="14" selection-end-line="159" selection-end-column="14" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#4297#4826#0" expanded="false" />
+            <element signature="e#4860#4929#0" expanded="false" />
+            <element signature="e#5045#5089#0" expanded="false" />
+            <marker date="1505398517000" expanded="true" signature="3828:3834" ph="©" />
           </folding>
         </state>
       </provider>
