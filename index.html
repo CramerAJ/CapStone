@@ -18,7 +18,7 @@
             position: absolute;
             width: 100%;
             height: 94%;
-            bottom:0;
+            top:0;
             right:0;
             left:0;
         }
@@ -26,7 +26,7 @@
             width: 100%;
             position: absolute;
             height: 42px;
-            top:0;
+            bottom: 0;
             left:0;
             z-index: 4;
             background-size: cover;
@@ -46,7 +46,7 @@
             margin: 4px 2px;
             cursor: pointer;
             position:relative;
-            left: 82%;
+            left: 1;
             top: 3px;
 
         }
@@ -67,7 +67,7 @@
                 margin: 4px 2px;
                 cursor: pointer;
                 position:relative;
-                left: 75%;
+                left: 1%;
                 top: 3px;
 
 
@@ -78,6 +78,7 @@
         }
 
         .button4 {background-color: #122b40;}
+        .button5 {background-color: #a8023e;}
     </style>
 
 </head>
@@ -97,6 +98,7 @@
 
 <div id="headerImage" style="z-index: 1000; background-color: white; width: 100%;" class="headcontainer" >
     <button class="button button4" onclick="locate()">Locate</button>
+    <button class="button button5" ontoggle="addMarker()">Marker</button>
 </div>
 
 <div id='map' class="leaflet-container"></div>
@@ -179,6 +181,9 @@
         }
 
     });
+
+
+//Creating markers and popup displays
 
 
 </script>
