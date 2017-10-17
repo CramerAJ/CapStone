@@ -82,7 +82,43 @@
         .button4 {background-color: #122b40;}
         .button5 {background-color: #a8023e;}
         .button6 {background-color: #1502a8;}
+        .button7 {background-color: #00a814;}
 
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        @media screen and (max-height: 50px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
     </style>
 
 </head>
@@ -102,10 +138,18 @@
 <link rel="stylesheet" href="https://unpkg.com/esri-leaflet-geocoder@2.2.4/dist/esri-leaflet-geocoder.css">
 <script src="https://unpkg.com/esri-leaflet-geocoder@2.2.4"></script>
 
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Electric Line</a>
+    <a href="#">Fallen Tree</a>
+    <a href="#">Point</a>
+</div>
+
 <div id="headerImage" style="z-index: 1000; background-color: white; width: 100%;" class="headcontainer" >
     <button class="button button4" onclick="locate()">Locate</button>
     <button class="button button5" onclick="marker()">Marker</button>
-    <button class="button button6" onclick="area()">Area</button>
+    <button class="button button6" onclick="openNav()">Area</button>
+    <button class="button button7" onclick="track()">Track</button>
 </div>
 
 <div id='map' class="leaflet-container"></div>
@@ -158,6 +202,7 @@
         map.locate({ maxZoom: 16});
 
     }
+
     let results = L.layerGroup().addTo(map);
     //GeoSearch plugin
     let searchControl = L.esri.Geocoding.geosearch().addTo(map);
@@ -175,16 +220,57 @@
 
     });
 
+
+
+//    function openNav() {
+//        document.getElementById("mySidenav").style.width = "250px";
+//        document.getElementById("headerImage").style.marginBottom = "250px";
+//    }
+//
+//    function closeNav() {
+//        document.getElementById("mySidenav").style.width = "0";
+//        document.getElementById("headerImage").style.marginBottom= "0";
+//    }
+
 //Creating markers and popup displays
 
     function marker(){
+        let currentMarker;
 
-        let markers = [];
-        let marker = L.marker();
-        map.onclick(marker.addTo(map));
-        marker.addTo(markers);
+        map.on("click", function (event) {
+            if (currentMarker) {
+                currentMarker._icon.style.transition = "transform 0.3s ease-out";
+                currentMarker._shadow.style.transition = "transform 0.3s ease-out";
 
+                currentMarker.setLatLng(event.latlng);
+
+                setTimeout(function () {
+                    currentMarker._icon.style.transition = null;
+                    currentMarker._shadow.style.transition = null;
+                }, 300);
+                return;
+            }
+
+            currentMarker = new L.marker(event.latlng, {
+                draggable: true
+            }).addTo(map).on("click", function () {
+                event.originalEvent.stopPropagation();
+            });
+        });
+
+        document.getElementById("done").addEventListener("click", function () {
+            currentMarker = null;
+
+        });
     }
+
+//Tracking, designed to monitor the whereabouts of a person in need
+//
+//    function track(){
+//
+//        let currentLoc = e.latlng;
+//        let newLoc = e.latlant.time(10);
+//    }
 
 </script>
 
