@@ -48,7 +48,7 @@
             margin: 4px 2px;
             cursor: pointer;
             position:relative;
-            left: 1;
+            left: 1px;
             top: 3px;
 
         }
@@ -79,6 +79,7 @@
             }
         }
 
+        .button3 {background-color: #565157;}
         .button4 {background-color: #122b40;}
         .button5 {background-color: #a8023e;}
         .button6 {background-color: #1502a8;}
@@ -146,15 +147,26 @@
 </div>
 
 <div id="headerImage" style="z-index: 1000; background-color: white; width: 100%;" class="headcontainer" >
-    <button class="button button4" onclick="locate()">Locate</button>
-    <button class="button button5" onclick="marker()">Marker</button>
-    <button class="button button6" onclick="openNav()">Area</button>
-    <button class="button button7" onclick="track()">Track</button>
+    <button id = "login" class="button button3" onclick="login()">Login</button>
+    <button id = "locate" class="button button4" onclick="locate()">Locate</button>
+    <button id = "marker"  class="button button5" onclick="marker()">Marker</button>
+    <button id = "openNav" class="button button6" onclick="openNav()">Label Area</button>
+    <button id = "trace" class="button button7" onclick="track()">Trace</button>
 </div>
 
 <div id='map' class="leaflet-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet-draw@0.4.9/dist/leaflet.draw.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<script src="https://cdn.rawgit.com/mejackreed/Leaflet-IIIF/v1.0.1/leaflet-iiif.js"></script>
+<script src="https://unpkg.com/leaflet-draw@0.4.9/dist/leaflet.draw.js"></script>
+
 <script>
 
+    $('#locate').hide();
+    $('#marker').hide();
+    $('#openNav').hide();
+    $('#trace').hide();
     //Creates the basemap
     let map = L.map('map').setView([42.877742, -97.380979], 4);
     //Portland 43.6515, -70.2553
@@ -162,12 +174,33 @@
     let Satellite = L.tileLayer("https://{s}.tiles.mapbox.com/v3/nbtsolutions.jbn3ge2f/{z}/{x}/{y}.png", {
         subdomains: 'abcd',
         maxZoom: 19
-    }).addTo(map);
+    });
 
+    Satellite.addTo(map);
+
+    function login() {
+        let login = document.getElementById("login");
+        let user = prompt("Account Name:", " ");
+        let user_password = prompt("Password:", " ");
+        if (user == "Cramer" && user_password == 'password') {
+            alert("Hello " + user + "! How are you today?");
+
+            $('#login').hide();
+            $('#locate').show();
+            $('#marker').show();
+            $('#openNav').show();
+            $('#trace').show();
+
+        }
+                else
+             {
+            alert("Nice Try Guy!!");
+        }
+    }
     //User Location Tool
     let currentPosition, currLatlngObject;
     let currentLatlng = [];
-    //
+
     function onLocationFound(e) {
 
         if (currentPosition) {
@@ -220,17 +253,30 @@
 
     });
 
+    function openNav() {
 
+        // Initialise the FeatureGroup to store editable layers
+        var drawnItems = new L.FeatureGroup();
+        map.addLayer(drawnItems);
 
-//    function openNav() {
-//        document.getElementById("mySidenav").style.width = "250px";
-//        document.getElementById("headerImage").style.marginBottom = "250px";
-//    }
-//
-//    function closeNav() {
-//        document.getElementById("mySidenav").style.width = "0";
-//        document.getElementById("headerImage").style.marginBottom= "0";
-//    }
+// Initialise the draw control and pass it the FeatureGroup of editable layers
+        var drawControl = new L.Control.Draw({
+            edit: {
+                featureGroup: drawnItems
+            }
+        });
+
+        map.addControl(drawControl);
+
+        map.on(L.Draw.Event.CREATED, function (e) {
+            var type = e.layerType;
+            var layer = e.layer;
+
+            // Do whatever else you need to. (save to db, add to map etc)
+
+            drawnItems.addLayer(layer);
+        });
+    }
 
 //Creating markers and popup displays
 
@@ -256,21 +302,62 @@
             }).addTo(map).on("click", function () {
                 event.originalEvent.stopPropagation();
             });
+
+            currentMarker.bindPopup(
+                'Marker Attributes'+'</br>'+'<br/>'+
+                'Marker Type Name:'+'</br>'+'<br/>'+
+                'User Text Insertion:'+'</br>'+'<br/>'+
+                'User Provided Photo/Video:'+'<br/>'+'<br/>'+
+                '<br/>'+
+                '<br/>'+'.'
+            ).openPopup(console.log("New Position"));
+
         });
 
         document.getElementById("done").addEventListener("click", function () {
             currentMarker = null;
-
         });
     }
 
-//Tracking, designed to monitor the whereabouts of a person in need
-//
-//    function track(){
-//
-//        let currentLoc = e.latlng;
-//        let newLoc = e.latlant.time(10);
-//    }
+    let allMarkers = L.layerGroup([]);
+    let users = L.layerGroup([]);
+    let shelters = L.layerGroup([]);
+
+    let newmarker = L.marker([44.808147, -68.795013]).addTo(allMarkers).addTo(users);
+    newmarker.bindPopup(
+        'User: Bob'+'</br>'+'<br/>'+
+        'Status: Safe'+'</br>'
+    ).openPopup(console.log("User"));
+    let newmarker1 = L.marker([44.808147, -68.785013]).addTo(allMarkers).addTo(users);
+    newmarker1.bindPopup(
+        'User: Fred'+'</br>'+'<br/>'+
+        'Status: Safe'+'</br>'
+    ).openPopup(console.log("User"));
+    let newmarker2 = L.marker([44.818147, -68.775013]).addTo(allMarkers).addTo(users);
+    newmarker2.bindPopup(
+        'User: Susan'+'</br>'+'<br/>'+
+        'Status: Safe'+'</br>'
+    ).openPopup(console.log("User"));
+    let newmarker3 = L.marker([44.808147, -68.765013]).addTo(allMarkers).addTo(users);
+    newmarker3.bindPopup(
+        'User: Carl'+'</br>'+'<br/>'+
+        'Status: Safe'+'</br>'
+    ).openPopup(console.log("User"));
+    let newmarker4 = L.marker([46.808147, -68.795013]).addTo(allMarkers).addTo(users);
+    newmarker4.bindPopup(
+        'User: Matty O'+'</br>'+'<br/>'+
+        'Status: AYYYYY HELP'+'</br>'
+    ).openPopup(console.log("User"));
+
+    let Markers = {
+        "All" : allMarkers,
+        "Users": users,
+        "Shelters": shelters,
+    };
+
+    L.control.layers(Markers,null).addTo(map);
+
+
 
 </script>
 
