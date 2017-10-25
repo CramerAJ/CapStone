@@ -279,8 +279,45 @@
     }
 
 //Creating markers and popup displays
+    let allMarkers = L.layerGroup([]);
+    let users = L.layerGroup([]);
+    let shelters = L.layerGroup([]);
+
+    let newmarker = L.marker([44.808147, -68.795013]).addTo(allMarkers).addTo(users);
+    newmarker.bindPopup(
+        'User: Bob'+'</br>'+'<br/>'+
+        'Status: Safe'+'</br>'
+    ).openPopup(console.log("User"));
+    let newmarker1 = L.marker([44.808147, -68.785013]).addTo(allMarkers).addTo(users);
+    newmarker1.bindPopup(
+        'User: Fred'+'</br>'+'<br/>'+
+        'Status: Safe'+'</br>'
+    ).openPopup(console.log("User"));
+    let newmarker2 = L.marker([44.818147, -68.775013]).addTo(allMarkers).addTo(users);
+    newmarker2.bindPopup(
+        'User: Susan'+'</br>'+'<br/>'+
+        'Status: Safe'+'</br>'
+    ).openPopup(console.log("User"));
+    let newmarker3 = L.marker([44.808147, -68.765013]).addTo(allMarkers).addTo(users);
+    newmarker3.bindPopup(
+        'User: Carl'+'</br>'+'<br/>'+
+        'Status: Safe'+'</br>'
+    ).openPopup(console.log("User"));
+    let newmarker4 = L.marker([46.808147, -68.795013]).addTo(allMarkers).addTo(users);
+    newmarker4.bindPopup(
+        'User: Matty O'+'</br>'+'<br/>'+
+        'Status: AYYYYY HELP'+'</br>'
+    ).openPopup(console.log("User"));
+
 
     function marker(){
+        let Markers = {
+            "All" : allMarkers,
+            "Users": users,
+            "Shelters": shelters,
+        };
+        L.control.layers(Markers,null).addTo(map);
+
         let currentMarker;
 
         map.on("click", function (event) {
@@ -317,45 +354,10 @@
         document.getElementById("done").addEventListener("click", function () {
             currentMarker = null;
         });
+
+
     }
 
-    let allMarkers = L.layerGroup([]);
-    let users = L.layerGroup([]);
-    let shelters = L.layerGroup([]);
-
-    let newmarker = L.marker([44.808147, -68.795013]).addTo(allMarkers).addTo(users);
-    newmarker.bindPopup(
-        'User: Bob'+'</br>'+'<br/>'+
-        'Status: Safe'+'</br>'
-    ).openPopup(console.log("User"));
-    let newmarker1 = L.marker([44.808147, -68.785013]).addTo(allMarkers).addTo(users);
-    newmarker1.bindPopup(
-        'User: Fred'+'</br>'+'<br/>'+
-        'Status: Safe'+'</br>'
-    ).openPopup(console.log("User"));
-    let newmarker2 = L.marker([44.818147, -68.775013]).addTo(allMarkers).addTo(users);
-    newmarker2.bindPopup(
-        'User: Susan'+'</br>'+'<br/>'+
-        'Status: Safe'+'</br>'
-    ).openPopup(console.log("User"));
-    let newmarker3 = L.marker([44.808147, -68.765013]).addTo(allMarkers).addTo(users);
-    newmarker3.bindPopup(
-        'User: Carl'+'</br>'+'<br/>'+
-        'Status: Safe'+'</br>'
-    ).openPopup(console.log("User"));
-    let newmarker4 = L.marker([46.808147, -68.795013]).addTo(allMarkers).addTo(users);
-    newmarker4.bindPopup(
-        'User: Matty O'+'</br>'+'<br/>'+
-        'Status: AYYYYY HELP'+'</br>'
-    ).openPopup(console.log("User"));
-
-    let Markers = {
-        "All" : allMarkers,
-        "Users": users,
-        "Shelters": shelters,
-    };
-
-    L.control.layers(Markers,null).addTo(map);
 
 
 
