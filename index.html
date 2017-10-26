@@ -150,7 +150,7 @@
     <button id = "login" class="button button3" onclick="login()">Login</button>
     <button id = "locate" class="button button4" onclick="locate()">Locate</button>
     <button id = "marker"  class="button button5" onclick="marker()">Marker</button>
-    <button id = "openNav" class="button button6" onclick="openNav()">Label Area</button>
+    <button id = "openNav" class="button button6" onclick="labelArea()">Label Area</button>
     <button id = "trace" class="button button7" onclick="track()">Trace</button>
 </div>
 
@@ -197,6 +197,7 @@
             alert("Nice Try Guy!!");
         }
     }
+
     //User Location Tool
     let currentPosition, currLatlngObject;
     let currentLatlng = [];
@@ -253,29 +254,42 @@
 
     });
 
-    function openNav() {
+    //Drawing Features being created
+    let labelCount = 1;
+    var drawnItems = new L.FeatureGroup();
+    // Initialise the draw control and pass it the FeatureGroup of editable layers
+    var drawControl = new L.Control.Draw({
+        edit: {
+            featureGroup: drawnItems
+        }
+    });
+    map.on(L.Draw.Event.CREATED, function (e) {
+        var type = e.layerType;
+        var layer = e.layer;
 
-        // Initialise the FeatureGroup to store editable layers
-        var drawnItems = new L.FeatureGroup();
-        map.addLayer(drawnItems);
+        // Do whatever else you need to. (save to db, add to map etc)
 
-// Initialise the draw control and pass it the FeatureGroup of editable layers
-        var drawControl = new L.Control.Draw({
-            edit: {
-                featureGroup: drawnItems
-            }
-        });
+        drawnItems.addLayer(layer);
+    });
 
-        map.addControl(drawControl);
+    function labelArea() {
 
-        map.on(L.Draw.Event.CREATED, function (e) {
-            var type = e.layerType;
-            var layer = e.layer;
+        if (labelCount===1) {
+            // Initialise the FeatureGroup to store editable layers
+            map.addLayer(drawnItems);
 
-            // Do whatever else you need to. (save to db, add to map etc)
+            map.addControl(drawControl);
 
-            drawnItems.addLayer(layer);
-        });
+           console.log(labelCount);
+
+            labelCount++;
+        }
+        else {
+            map.removeControl(drawControl);
+            map.removeControl(drawnItems);
+            labelCount--;
+            console.log(labelCount);
+        }
     }
 
 //Creating markers and popup displays
@@ -309,56 +323,64 @@
         'Status: AYYYYY HELP'+'</br>'
     ).openPopup(console.log("User"));
 
-
+    let markerCount = 1;
+    let Markers = {
+        "All": allMarkers,
+        "Users": users,
+        "Shelters": shelters,
+    };
+    let markerControls = L.control.layers(Markers, null);
     function marker(){
-        let Markers = {
-            "All" : allMarkers,
-            "Users": users,
-            "Shelters": shelters,
-        };
-        L.control.layers(Markers,null).addTo(map);
 
-        let currentMarker;
+        if (markerCount === 1) {
 
-        map.on("click", function (event) {
-            if (currentMarker) {
-                currentMarker._icon.style.transition = "transform 0.3s ease-out";
-                currentMarker._shadow.style.transition = "transform 0.3s ease-out";
+            markerControls.addTo(map);
+            markerCount++
+        }
+        else{
+            markerControls.removeControl(map);
+            markerCount--;
+        }
 
-                currentMarker.setLatLng(event.latlng);
-
-                setTimeout(function () {
-                    currentMarker._icon.style.transition = null;
-                    currentMarker._shadow.style.transition = null;
-                }, 300);
-                return;
-            }
-
-            currentMarker = new L.marker(event.latlng, {
-                draggable: true
-            }).addTo(map).on("click", function () {
-                event.originalEvent.stopPropagation();
-            });
-
-            currentMarker.bindPopup(
-                'Marker Attributes'+'</br>'+'<br/>'+
-                'Marker Type Name:'+'</br>'+'<br/>'+
-                'User Text Insertion:'+'</br>'+'<br/>'+
-                'User Provided Photo/Video:'+'<br/>'+'<br/>'+
-                '<br/>'+
-                '<br/>'+'.'
-            ).openPopup(console.log("New Position"));
-
-        });
-
-        document.getElementById("done").addEventListener("click", function () {
-            currentMarker = null;
-        });
+//        let currentMarker;
+//
+//        map.on("click", function (event) {
+//            if (currentMarker) {
+//                currentMarker._icon.style.transition = "transform 0.3s ease-out";
+//                currentMarker._shadow.style.transition = "transform 0.3s ease-out";
+//
+//                currentMarker.setLatLng(event.latlng);
+//
+//                setTimeout(function () {
+//                    currentMarker._icon.style.transition = null;
+//                    currentMarker._shadow.style.transition = null;
+//                }, 300);
+//                return;
+//            }
+//
+//            currentMarker = new L.marker(event.latlng, {
+//                draggable: true
+//            }).addTo(map).on("click", function () {
+//                event.originalEvent.stopPropagation();
+//            });
+//
+//            currentMarker.bindPopup(
+//                'Marker Attributes'+'</br>'+'<br/>'+
+//                'Marker Type Name:'+'</br>'+'<br/>'+
+//                'User Text Insertion:'+'</br>'+'<br/>'+
+//                'User Provided Photo/Video:'+'<br/>'+'<br/>'+
+//                '<br/>'+
+//                '<br/>'+'.'
+//            ).openPopup(console.log("New Position"));
+//
+//        });
+//
+//        document.getElementById("done").addEventListener("click", function () {
+//            currentMarker = null;
+//        });
 
 
     }
-
-
 
 
 </script>
