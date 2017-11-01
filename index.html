@@ -72,7 +72,6 @@
                 left: 1%;
                 top: 3px;
 
-
             }
             .button4{
                 value: 'Loc';
@@ -120,10 +119,79 @@
             .sidenav {padding-top: 15px;}
             .sidenav a {font-size: 18px;}
         }
+
+
+
+        .login-page {
+            width: 100%;
+            min-height: 100%;
+            padding: 18% 0 0;
+            margin: auto;
+            background: url("backgroundImage.jpg") no-repeat;
+            background-size: 100%;
+
+        }
+        .form {
+            position: relative;
+            z-index: 1;
+            background: #FFFFFF;
+            max-width: 360px;
+            margin: 0 auto 100px;
+            padding: 45px;
+            text-align: center;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        }
+        .form input {
+            font-family: "Roboto", sans-serif;
+            outline: 0;
+            background: #f2f2f2;
+            width: 100%;
+            border: 0;
+            margin: 0 0 15px;
+            padding: 15px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        .form button {
+            font-family: "Roboto", sans-serif;
+            text-transform: uppercase;
+            outline: 0;
+            background: #1502a8;
+            width: 100%;
+            border: 0;
+            padding: 15px;
+            color: #FFFFFF;
+            font-size: 14px;
+            -webkit-transition: all 0.3 ease;
+            transition: all 0.3 ease;
+            cursor: pointer;
+        }
+        .form button:hover,.form button:active,.form button:focus {
+            background: #1502a8;
+        }
+        .form .message {
+            margin: 15px 0 0;
+            color: #b3b3b3;
+            font-size: 12px;
+        }
+        .form .message a {
+            color: #1502a8;
+            text-decoration: none;
+        }
+        .form .register-form {
+            display: none;
+        }
+        .form .appName {
+            margin: 0 0 20px;
+            color: #000000;
+            font-size: 48px;
+        }
+
+
     </style>
 
 </head>
-<body>
+<body style="height: 100%;">
 
 <script src="./jquery-3.2.1.min.js"></script>
 <script src="./leaflet-src.js"></script>
@@ -139,6 +207,8 @@
 <link rel="stylesheet" href="https://unpkg.com/esri-leaflet-geocoder@2.2.4/dist/esri-leaflet-geocoder.css">
 <script src="https://unpkg.com/esri-leaflet-geocoder@2.2.4"></script>
 
+<div id="mapPage">
+
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="#">Electric Line</a>
@@ -147,7 +217,6 @@
 </div>
 
 <div id="headerImage" style="z-index: 1000; background-color: white; width: 100%;" class="headcontainer" >
-    <button id = "login" class="button button3" onclick="login()">Login</button>
     <button id = "locate" class="button button4" onclick="locate()">Locate</button>
     <button id = "marker"  class="button button5" onclick="marker()">Marker</button>
     <button id = "openNav" class="button button6" onclick="labelArea()">Label Area</button>
@@ -162,41 +231,28 @@
 <script src="https://unpkg.com/leaflet-draw@0.4.9/dist/leaflet.draw.js"></script>
 
 <script>
-
-    $('#locate').hide();
-    $('#marker').hide();
-    $('#openNav').hide();
-    $('#trace').hide();
     //Creates the basemap
     let map = L.map('map').setView([42.877742, -97.380979], 4);
     //Portland 43.6515, -70.2553
     // Additional maps
+
     let Satellite = L.tileLayer("https://{s}.tiles.mapbox.com/v3/nbtsolutions.jbn3ge2f/{z}/{x}/{y}.png", {
         subdomains: 'abcd',
         maxZoom: 19
     });
+    let OpenStreetMap_HOT = L.tileLayer('https://korona.geog.uni-heidelberg.de/tiles/roads/x={x}&y={y}&z={z}', {
+        maxZoom: 20,
+        attribution: 'Imagery from <a href="http://giscience.uni-hd.de/">GIScience Research Group @ University of Heidelberg</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'    });
 
     Satellite.addTo(map);
 
-    function login() {
-        let login = document.getElementById("login");
-        let user = prompt("Account Name:", " ");
-        let user_password = prompt("Password:", " ");
-        if (user == "Cramer" && user_password == 'password') {
-            alert("Hello " + user + "! How are you today?");
+    let Basemaps ={
+        'Satelite':Satellite,
+        'OST Map': OpenStreetMap_HOT,
 
-            $('#login').hide();
-            $('#locate').show();
-            $('#marker').show();
-            $('#openNav').show();
-            $('#trace').show();
-
-        }
-                else
-             {
-            alert("Nice Try Guy!!");
-        }
-    }
+    };
+    let baseMaps = L.control.layers(Basemaps,null);
+    baseMaps.addTo(map);
 
     //User Location Tool
     let currentPosition, currLatlngObject;
@@ -213,6 +269,7 @@
 //            shape: 'square',
 //        });
 //        icon: redMarker,
+
         currentPosition = L.marker(e.latlng,{title: "Location", draggable: false, color: "red"}).addTo(map);
 
         currLatlngObject = currentPosition._latlng;
@@ -307,11 +364,12 @@
         'User: Fred'+'</br>'+'<br/>'+
         'Status: Safe'+'</br>'
     ).openPopup(console.log("User"));
-    let newmarker2 = L.marker([44.818147, -68.775013]).addTo(allMarkers).addTo(users);
+    let newmarker2 = L.CircleMarker([44.818147, -68.775013],
+        {radius: 6,
+            color:"#f44336"}).addTo(allMarkers).addTo(shelters);
     newmarker2.bindPopup(
-        'User: Susan'+'</br>'+'<br/>'+
-        'Status: Safe'+'</br>'
-    ).openPopup(console.log("User"));
+        'Shelter'+'</br>'
+    ).openPopup(console.log("Shelter"));
     let newmarker3 = L.marker([44.808147, -68.765013]).addTo(allMarkers).addTo(users);
     newmarker3.bindPopup(
         'User: Carl'+'</br>'+'<br/>'+
@@ -324,12 +382,16 @@
     ).openPopup(console.log("User"));
 
     let markerCount = 1;
+
     let Markers = {
         "All": allMarkers,
         "Users": users,
         "Shelters": shelters,
     };
     let markerControls = L.control.layers(Markers, null);
+
+
+
     function marker(){
 
         if (markerCount === 1) {
@@ -341,6 +403,9 @@
             markerControls.remove();
             markerCount--;
         }
+
+        //
+//  DO NOT TOUCH UNTIL YOU HAVE DATA CRAMER!!!!!
 
 //        let currentMarker;
 //
@@ -382,8 +447,60 @@
 
     }
 
-
 </script>
+</div>
+
+<script> $('#mapPage').hide()</script>
+<div class="login-page">
+    <div class="form">
+        <form class="register-form">
+            <input id="registerName" type="text" placeholder="name"/>
+            <input id="registerPasswrod" type="password" placeholder="password"/>
+            <input id="registerEmail" type="text" placeholder="email address"/>
+
+            <button>create</button>
+            <p class="message">Already registered? <a href="#">Sign In</a></p>
+        </form>
+<!-- may need to move-->
+        <form class="login-form">
+            <p class="appName" >NATD App</p>
+            <input id="userLogin" type="text" placeholder="username" value=""/>
+            <input id="password"  type="password" placeholder="password" value=""/>
+            <button type = "button" onclick="login()">login</button>
+            <!--<p class="message">Not registered? <a href="#">Create an account</a></p>-->
+        </form>
+        <!-- IF WIFI IS DOWN OF SERVER IS DOWN user should still be allowed to draw or add information
+        and store it on their phone, so the map is updated once they connect to wifi or a cell tower-->
+    </div>
+
+    <script>
+
+        function login() {
+
+            let userName = document.getElementById("userLogin").value;
+            let user_password = document.getElementById("password").value;
+            console.log(userName + "" +user_password);
+
+            if (userName === "Cramer" && user_password === 'password') {
+            alert("Welcome "+userName+"!");
+           //This will dump the login and swap on the map
+                //THIS WORKS FOR NOW
+                //CHANGE WHEN YOU HAVE CREATED MULTIPLE
+                // ACCOUNTS ITS HARD CODED
+
+                $('.login-page').hide();
+                $('#mapPage').show();
+
+            }
+            else
+            {
+                alert("Invalid Name or Password. " +
+                    "Case sensitive!!");
+            }
+        }
+
+    </script>
+</div>
 
 </body>
 
