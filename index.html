@@ -78,9 +78,7 @@
             }
         }
 
-        .button3 {background-color: #565157;}
         .button4 {background-color: #122b40;}
-        .button5 {background-color: #a8023e;}
         .button6 {background-color: #1502a8;}
         .button7 {background-color: #00a814;}
 
@@ -218,7 +216,6 @@
 
 <div id="headerImage" style="z-index: 1000; background-color: white; width: 100%;" class="headcontainer" >
     <button id = "locate" class="button button4" onclick="locate()">Locate</button>
-    <button id = "marker"  class="button button5" onclick="marker()">Marker</button>
     <button id = "openNav" class="button button6" onclick="labelArea()">Label Area</button>
     <button id = "trace" class="button button7" onclick="track()">Trace</button>
 </div>
@@ -350,61 +347,51 @@
     }
 
 //Creating markers and popup displays
-    let allMarkers = L.layerGroup([]);
-    let users = L.layerGroup([]);
-    let shelters = L.layerGroup([]);
+//    let allMarkers = L.layerGroup([]);
+//    let users = L.layerGroup([]);
+//    let shelters = L.layerGroup([]);
 
-    let newmarker = L.marker([44.808147, -68.795013]).addTo(allMarkers).addTo(users);
+    let newmarker = L.marker([44.808147, -68.795013]).addTo(map);
     newmarker.bindPopup(
         'User: Bob'+'</br>'+'<br/>'+
         'Status: Safe'+'</br>'
     ).openPopup(console.log("User"));
-    let newmarker1 = L.marker([44.808147, -68.785013]).addTo(allMarkers).addTo(users);
+    let newmarker1 = L.marker([44.808147, -68.785013]).addTo(map);
     newmarker1.bindPopup(
         'User: Fred'+'</br>'+'<br/>'+
         'Status: Safe'+'</br>'
     ).openPopup(console.log("User"));
-    let newmarker2 = L.CircleMarker([44.818147, -68.775013],
-        {radius: 6,
-            color:"#f44336"}).addTo(allMarkers).addTo(shelters);
+
+    let newmarker2 = L.circle([44.818147, -68.775013],
+        {radius: 2000,
+            color:"#09f40c"});
+
     newmarker2.bindPopup(
         'Shelter'+'</br>'
-    ).openPopup(console.log("Shelter"));
-    let newmarker3 = L.marker([44.808147, -68.765013]).addTo(allMarkers).addTo(users);
+    ).openPopup(console.log("Safe Area"));
+    let flooding = L.circle([45.918147, -68.875013],
+        {radius: 28000,
+            color:"#0d00f4"});
+
+    flooding.bindPopup(
+        'Shelter'+'</br>'
+    ).openPopup(console.log("Flooded Area"));
+    newmarker2.addTo(map);
+    flooding.addTo(map);
+
+    let newmarker3 = L.marker([44.808147, -68.765013]).addTo(map);
     newmarker3.bindPopup(
         'User: Carl'+'</br>'+'<br/>'+
         'Status: Safe'+'</br>'
     ).openPopup(console.log("User"));
-    let newmarker4 = L.marker([46.808147, -68.795013]).addTo(allMarkers).addTo(users);
+    let newmarker4 = L.marker([45.918147, -68.875013]).addTo(map);
     newmarker4.bindPopup(
         'User: Matty O'+'</br>'+'<br/>'+
         'Status: AYYYYY HELP'+'</br>'
     ).openPopup(console.log("User"));
 
-    let markerCount = 1;
 
-    let Markers = {
-        "All": allMarkers,
-        "Users": users,
-        "Shelters": shelters,
-    };
-    let markerControls = L.control.layers(Markers, null);
-
-
-
-    function marker(){
-
-        if (markerCount === 1) {
-
-            markerControls.addTo(map);
-            markerCount++
-        }
-        else{
-            markerControls.remove();
-            markerCount--;
-        }
-
-        //
+            //
 //  DO NOT TOUCH UNTIL YOU HAVE DATA CRAMER!!!!!
 
 //        let currentMarker;
@@ -444,8 +431,6 @@
 //            currentMarker = null;
 //        });
 
-
-    }
 
 </script>
 </div>
