@@ -15,179 +15,7 @@
     <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js"
             integrity="sha512-mNqn2Wg7tSToJhvHcqfzLMU6J4mkOImSPTxVZAdo+lcPlk+GhZmYgACEe0x35K7YzW1zJ7XyJV/TT1MrdXvMcA=="
             crossorigin=""></script>
-    <style>
-        #map {
-            position: absolute;
-            width: 100%;
-            height: 94%;
-            top:0;
-            right:0;
-            left:0;
-        }
-        .headcontainer{
-            width: 100%;
-            position: absolute;
-            height: 42px;
-            bottom: 0;
-            left:0;
-            z-index: 4;
-            background-size: cover;
-            background-repeat:no-repeat;
-            background-position: 50% 50%;
-        }
-        .button {
-            background-color: #f44336; /* Red */
-            border: none;
-            color: white;
-            width: 17%;
-            height: 30px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            position:relative;
-            left: 1px;
-            top: 3px;
-
-        }
-        .button:hover{
-            opacity: .7;
-
-        }
-        @media (max-width: 460px) {
-            .button {
-                border: none;
-                color: white;
-                width: 21%;
-                height: 28px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                margin: 4px 2px;
-                cursor: pointer;
-                position:relative;
-                left: 1%;
-                top: 3px;
-
-            }
-            .button4{
-                value: 'Loc';
-            }
-        }
-
-        .button4 {background-color: #122b40;}
-        .button6 {background-color: #1502a8;}
-        .button7 {background-color: #00a814;}
-
-        .sidenav {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #111;
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 60px;
-        }
-        .sidenav a {
-            padding: 8px 8px 8px 32px;
-            text-decoration: none;
-            font-size: 25px;
-            color: #818181;
-            display: block;
-            transition: 0.3s;
-        }
-        .sidenav a:hover {
-            color: #f1f1f1;
-        }
-        .sidenav .closebtn {
-            position: absolute;
-            top: 0;
-            right: 25px;
-            font-size: 36px;
-            margin-left: 50px;
-        }
-
-        @media screen and (max-height: 50px) {
-            .sidenav {padding-top: 15px;}
-            .sidenav a {font-size: 18px;}
-        }
-
-
-
-        .login-page {
-            width: 100%;
-            min-height: 100%;
-            padding: 18% 0 0;
-            margin: auto;
-            background: url("backgroundImage.jpg") no-repeat;
-            background-size: 100%;
-
-        }
-        .form {
-            position: relative;
-            z-index: 1;
-            background: #FFFFFF;
-            max-width: 360px;
-            margin: 0 auto 100px;
-            padding: 45px;
-            text-align: center;
-            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-        }
-        .form input {
-            font-family: "Roboto", sans-serif;
-            outline: 0;
-            background: #f2f2f2;
-            width: 100%;
-            border: 0;
-            margin: 0 0 15px;
-            padding: 15px;
-            box-sizing: border-box;
-            font-size: 14px;
-        }
-        .form button {
-            font-family: "Roboto", sans-serif;
-            text-transform: uppercase;
-            outline: 0;
-            background: #1502a8;
-            width: 100%;
-            border: 0;
-            padding: 15px;
-            color: #FFFFFF;
-            font-size: 14px;
-            -webkit-transition: all 0.3 ease;
-            transition: all 0.3 ease;
-            cursor: pointer;
-        }
-        .form button:hover,.form button:active,.form button:focus {
-            background: #1502a8;
-        }
-        .form .message {
-            margin: 15px 0 0;
-            color: #b3b3b3;
-            font-size: 12px;
-        }
-        .form .message a {
-            color: #1502a8;
-            text-decoration: none;
-        }
-        .form .register-form {
-            display: none;
-        }
-        .form .appName {
-            margin: 0 0 20px;
-            color: #000000;
-            font-size: 48px;
-        }
-
-
-    </style>
-
+    <link rel="stylesheet" href="mapStyle.css">
 </head>
 <body style="height: 100%;">
 
@@ -215,9 +43,9 @@
 </div>
 
 <div id="headerImage" style="z-index: 1000; background-color: white; width: 100%;" class="headcontainer" >
-    <button id = "locate" class="button button4" onclick="locate()">Locate</button>
+    <button id = "locate" class="button button4" onclick="locate()">Locate Me</button>
     <button id = "openNav" class="button button6" onclick="labelArea()">Label Area</button>
-    <button id = "trace" class="button button7" onclick="track()">Trace</button>
+    <button id = "trace" class="button button7" onclick="viewArea()">Edit View</button>
 </div>
 
 <div id='map' class="leaflet-container"></div>
@@ -244,15 +72,17 @@
 
     Esri_WorldTopoMap.addTo(map);
 
-    let Basemaps ={
-        'Satelite':Satellite,
-        'Static Map': Esri_WorldTopoMap,
-
-    };
-    let baseMaps = L.control.layers(Basemaps,null);
-    baseMaps.addTo(map);
+//    let Basemaps ={
+//        'Satelite':Satellite,
+//        'Static Map': Esri_WorldTopoMap,
+//
+//    };
+//    let baseMaps = L.control.layers(Basemaps,null);
+//    baseMaps.addTo(map);
 
     //User Location Tool
+
+
     let currentPosition, currLatlngObject;
     let currentLatlng = [];
 
@@ -309,55 +139,63 @@
 
     });
 
+
+
+
+
     //Drawing Features being created
-    let labelCount = 1;
+
+
+
     var drawnItems = new L.FeatureGroup();
     // Initialise the draw control and pass it the FeatureGroup of editable layers
     var drawControl = new L.Control.Draw({
         edit: {
             featureGroup: drawnItems
         }
-    });
-    map.on(L.Draw.Event.CREATED, function (e) {
-        var type = e.layerType;
-        var layer = e.layer;
 
+    });
+
+    map.on(L.Draw.Event.CREATED, function (e) {
+
+        let type = e.layerType;
+        let layer = e.layer;
         // Do whatever else you need to. (save to db, add to map etc)
 
         drawnItems.addLayer(layer);
+        console.log('drawingPolygon')
     });
 
+    let labelCount = 1;
     function labelArea() {
-
         if (labelCount===1) {
             // Initialise the FeatureGroup to store editable layers
             map.addLayer(drawnItems);
-
             map.addControl(drawControl);
-
-           console.log(labelCount);
-
             labelCount++;
         }
         else {
             map.removeControl(drawControl);
             map.removeControl(drawnItems);
             labelCount--;
-            console.log(labelCount);
         }
     }
 
-//Creating markers and popup displays
-//    let allMarkers = L.layerGroup([]);
-//    let users = L.layerGroup([]);
-//    let shelters = L.layerGroup([]);
+    
 
-    let newmarker = L.marker([44.808147, -68.795013]).addTo(map);
+//Creating markers and popup displays
+    let allMarkers = L.layerGroup([]);
+    let users = L.layerGroup([]);
+    let shelters = L.layerGroup([]);
+    let floodArea = L.layerGroup([]);
+    let fireArea = L.layerGroup([]);
+
+    let newmarker = L.marker([44.808147, -68.795013]).addTo(allMarkers).addTo(users);
     newmarker.bindPopup(
         'User: Bob'+'</br>'+'<br/>'+
         'Status: Safe'+'</br>'
     ).openPopup(console.log("User"));
-    let newmarker1 = L.marker([44.808147, -68.785013]).addTo(map);
+    let newmarker1 = L.marker([44.808147, -68.785013]).addTo(allMarkers).addTo(users);
     newmarker1.bindPopup(
         'User: Fred'+'</br>'+'<br/>'+
         'Status: Safe'+'</br>'
@@ -365,73 +203,61 @@
 
     let newmarker2 = L.circle([44.818147, -68.775013],
         {radius: 2000,
-            color:"#09f40c"});
-
+            color:"#09f40c"}).addTo(allMarkers).addTo(shelters);
     newmarker2.bindPopup(
         'Shelter'+'</br>'
     ).openPopup(console.log("Safe Area"));
     let flooding = L.circle([45.918147, -68.875013],
         {radius: 28000,
-            color:"#0d00f4"});
-
+            color:"#0d00f4"}).addTo(allMarkers).addTo(floodArea);
     flooding.bindPopup(
-        'Shelter'+'</br>'
+        'Flooded Area'+'</br>'
     ).openPopup(console.log("Flooded Area"));
-    newmarker2.addTo(map);
-    flooding.addTo(map);
 
-    let newmarker3 = L.marker([44.808147, -68.765013]).addTo(map);
+    let fire = L.circle([44.918147, -67.875013],
+        {radius: 3800,
+            color:"#f40039"}).addTo(allMarkers).addTo(fireArea);
+    fire.bindPopup(
+        'Fire!!!'+'</br>'
+    ).openPopup(console.log("Fire Area"));
+
+
+    let newmarker3 = L.marker([44.808147, -68.765013]).addTo(allMarkers).addTo(users);
     newmarker3.bindPopup(
         'User: Carl'+'</br>'+'<br/>'+
         'Status: Safe'+'</br>'
     ).openPopup(console.log("User"));
-    let newmarker4 = L.marker([45.918147, -68.875013]).addTo(map);
+    let newmarker4 = L.marker([45.918147, -68.875013]).addTo(allMarkers).addTo(users);
     newmarker4.bindPopup(
         'User: Matty O'+'</br>'+'<br/>'+
-        'Status: AYYYYY HELP'+'</br>'
+        'Status: AYYYYY HELP '+'</br>'
     ).openPopup(console.log("User"));
 
+    //EDIT VIEW END
 
-            //
-//  DO NOT TOUCH UNTIL YOU HAVE DATA CRAMER!!!!!
 
-//        let currentMarker;
-//
-//        map.on("click", function (event) {
-//            if (currentMarker) {
-//                currentMarker._icon.style.transition = "transform 0.3s ease-out";
-//                currentMarker._shadow.style.transition = "transform 0.3s ease-out";
-//
-//                currentMarker.setLatLng(event.latlng);
-//
-//                setTimeout(function () {
-//                    currentMarker._icon.style.transition = null;
-//                    currentMarker._shadow.style.transition = null;
-//                }, 300);
-//                return;
-//            }
-//
-//            currentMarker = new L.marker(event.latlng, {
-//                draggable: true
-//            }).addTo(map).on("click", function () {
-//                event.originalEvent.stopPropagation();
-//            });
-//
-//            currentMarker.bindPopup(
-//                'Marker Attributes'+'</br>'+'<br/>'+
-//                'Marker Type Name:'+'</br>'+'<br/>'+
-//                'User Text Insertion:'+'</br>'+'<br/>'+
-//                'User Provided Photo/Video:'+'<br/>'+'<br/>'+
-//                '<br/>'+
-//                '<br/>'+'.'
-//            ).openPopup(console.log("New Position"));
-//
-//        });
-//
-//        document.getElementById("done").addEventListener("click", function () {
-//            currentMarker = null;
-//        });
+    let polygons = {
+        'Everything': allMarkers,
+        'Users': users,
+        'shelters': shelters,
+        'Flooded Area': floodArea,
+        'Fire' :fireArea
+    };
+    let polygonControl = L.control.layers(polygons,null);
 
+    let viewCount = 1;
+    function viewArea() {
+
+        if(viewCount===1){
+            polygonControl.addTo(map);
+            viewCount++;
+        }
+        else{
+            map.removeControl(polygonControl);
+            viewCount--;
+        }
+
+    }
 
 </script>
 </div>
@@ -455,7 +281,7 @@
             <button type = "button" onclick="login()">login</button>
             <!--<p class="message">Not registered? <a href="#">Create an account</a></p>-->
         </form>
-        <!-- IF WIFI IS DOWN OF SERVER IS DOWN user should still be allowed to draw or add information
+        <!-- IF WIFI IS DOWN OR SERVER IS DOWN user should still be allowed to draw or add information
         and store it on their phone, so the map is updated once they connect to wifi or a cell tower-->
     </div>
 

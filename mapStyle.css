@@ -1,0 +1,169 @@
+#map {
+    position: absolute;
+    width: 100%;
+    height: 94%;
+    top:0;
+    right:0;
+    left:0;
+}
+.headcontainer{
+    width: 100%;
+    position: absolute;
+    height: 42px;
+    bottom: 0;
+    left:0;
+    z-index: 4;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: 50% 50%;
+}
+.button {
+    background-color: #f44336; /* Red */
+    border: none;
+    color: white;
+    width: 17%;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position:relative;
+    left: 1px;
+    top: 3px;
+
+}
+.button:hover{
+    opacity: .7;
+
+}
+@media (max-width: 460px) {
+    .button {
+        border: none;
+        color: white;
+        width: 21%;
+        height: 28px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        position:relative;
+        left: 1%;
+        top: 3px;
+
+    }
+    .button4{
+        value: 'Loc';
+    }
+}
+
+.button4 {background-color: #122b40;}
+.button6 {background-color: #1502a8;}
+.button7 {background-color: #00a814;}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 50px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+
+.login-page {
+    width: 100%;
+    min-height: 100%;
+    padding: 18% 0 0;
+    margin: auto;
+    background: url("backgroundImage.jpg") no-repeat;
+    background-size: 100%;
+
+}
+.form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #1502a8;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+    background: #1502a8;
+}
+.form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+}
+.form .message a {
+    color: #1502a8;
+    text-decoration: none;
+}
+.form .register-form {
+    display: none;
+}
+.form .appName {
+    margin: 0 0 20px;
+    color: #000000;
+    font-size: 48px;
+}
+
