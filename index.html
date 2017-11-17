@@ -80,7 +80,7 @@
 //    let baseMaps = L.control.layers(Basemaps,null);
 //    baseMaps.addTo(map);
 
-    //User Location Tool
+    // User Location Tool
 
 
     let currentPosition, currLatlngObject;
@@ -141,20 +141,148 @@
 
 
 
-
-
     //Drawing Features being created
 
 
-
-    var drawnItems = new L.FeatureGroup();
+    var floodItems = new L.FeatureGroup();
     // Initialise the draw control and pass it the FeatureGroup of editable layers
-    var drawControl = new L.Control.Draw({
-        edit: {
-            featureGroup: drawnItems
+    var floodControl = new L.Control.Draw({
+        draw: {
+            polyline: {
+                shapeOptions: {
+                    color: '#2373dc',
+                    weight: 10
+                }
+            },
+            polygon: {
+                allowIntersection: false, // Restricts shapes to simple polygons
+                drawError: {
+                    color: '#2373dc', // Color the shape will turn when intersects
+                    message: 'you can\'t draw that!' // Message that will show when intersect
+                },
+                shapeOptions: {
+                    color: '#2373dc'
+                }
+            },
+            circle: false, // Turns off this drawing tool
+            rectangle: {
+                shapeOptions: {
+                    clickable: false
+                }
+            },
+            edit: {
+                featureGroup: floodItems, //REQUIRED!!
+                remove: false
+            }
+
         }
 
     });
+
+    var fireItems = new L.FeatureGroup();
+    // Initialise the draw control and pass it the FeatureGroup of editable layers
+    var fireControl = new L.Control.Draw({
+        draw: {
+            polyline: {
+                shapeOptions: {
+                    color: '#ea1c18',
+                    weight: 10
+                }
+            },
+            polygon: {
+                allowIntersection: false,
+                drawError: {
+                    color: '#ea1c18',
+                    message: 'you can\'t draw that!'
+                },
+                shapeOptions: {
+                    color: '#ea1c18'
+                }
+            },
+            circle: false, // Turns off this drawing tool
+            rectangle: {
+                shapeOptions: {
+                    clickable: false
+                }
+            },
+            edit: {
+                featureGroup: fireItems, //REQUIRED!!
+                remove: false
+            }
+
+        }
+
+    });
+
+    var snowItems = new L.FeatureGroup();
+    // Initialise the draw control and pass it the FeatureGroup of editable layers
+    var snowControl = new L.Control.Draw({
+        draw: {
+            polyline: {
+                shapeOptions: {
+                    color: '#dcdcdc',
+                    weight: 10
+                }
+            },
+            polygon: {
+                allowIntersection: false,
+                drawError:{
+                    color: '#dcdcdc',
+                    message: 'no!'
+                },
+                shapeOptions: {
+                    color: '#dcdcdc'
+                }
+            },
+            circle: false,
+            rectangle: {
+                shapeOptions: {
+                    clickable: false
+                }
+        },
+        edit: {
+            featureGroup: snowItems, //REQUIRED!!
+            remove: false
+        }
+
+        }
+    });
+
+    var electricalItems = new L.FeatureGroup();
+    // Initialise the draw control and pass it the FeatureGroup of editable layers
+    var electricalControl = new L.Control.Draw({
+        draw: {
+            polyline: {
+                shapeOptions: {
+                    color: '#dcc511',
+                    weight: 10
+                }
+            },
+            polygon: {
+                allowIntersection: false,
+                drawError: {
+                    color: '#dcc511',
+                    message: 'NOPE!'
+                },
+                shapeOptions: {
+                    color: '#dcc511'
+                }
+            },
+            circle: false, // Turns off this drawing tool
+            rectangle: {
+                shapeOptions: {
+                    clickable: false
+                }
+            },
+            edit: {
+                featureGroup: electricalItems, //REQUIRED!!
+                remove: false
+            }
+
+        }
+    });
+
+
 
     map.on(L.Draw.Event.CREATED, function (e) {
 
@@ -162,21 +290,26 @@
         let layer = e.layer;
         // Do whatever else you need to. (save to db, add to map etc)
 
-        drawnItems.addLayer(layer);
-        console.log('drawingPolygon')
+        floodItems.addLayer(layer);
+        fireItems.addLayer(layer);
+        snowItems.addLayer(layer);
+        electricalItems.addLayer(layer);
+
+        console.log('floodPolygon')
     });
 
+    
     let labelCount = 1;
     function labelArea() {
         if (labelCount===1) {
             // Initialise the FeatureGroup to store editable layers
-            map.addLayer(drawnItems);
-            map.addControl(drawControl);
+            map.addLayer(floodItems);
+            map.addControl(floodControl);
             labelCount++;
         }
         else {
-            map.removeControl(drawControl);
-            map.removeControl(drawnItems);
+            map.removeControl(floodControl);
+            map.removeControl(floodItems);
             labelCount--;
         }
     }
@@ -234,8 +367,6 @@
     ).openPopup(console.log("User"));
 
     //EDIT VIEW END
-
-
     let polygons = {
         'Everything': allMarkers,
         'Users': users,
@@ -310,6 +441,8 @@
                     "Case sensitive!!");
             }
         }
+
+
 
     </script>
 </div>
