@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.3/css/bootstrap-select.min.css" />
     <link rel="stylesheet" href="leafletManual.css"/>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="css/leaflet.extra-markers.min.css">
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.1.0/dist/leaflet.css"
@@ -16,6 +18,7 @@
             integrity="sha512-mNqn2Wg7tSToJhvHcqfzLMU6J4mkOImSPTxVZAdo+lcPlk+GhZmYgACEe0x35K7YzW1zJ7XyJV/TT1MrdXvMcA=="
             crossorigin=""></script>
     <link rel="stylesheet" href="mapStyle.css">
+
 </head>
 <body style="height: 100%;">
 
@@ -44,12 +47,22 @@
 
 <div id="headerImage" style="z-index: 1000; background-color: white; width: 100%;" class="headcontainer" >
     <button id = "locate" class="button button4" onclick="locate()">Locate Me</button>
-    <button id = "openNav" class="button button6" onclick="labelArea()">Label Area</button>
+    <button id="openNav" class="button button6" onclick="PopUp()">Label Area</button>
+ <!--   <div class="dropup">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Label Area<span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="#">Snow</a></li>
+            <li><a href="#">Flood</a></li>
+            <li><a href="#">Fire</a></li>
+            <li><a href="#">Electric</a></li>
+        </ul>
+    </div>
+-->
     <button id = "trace" class="button button7" onclick="viewArea()">Edit View</button>
 </div>
 
 <div id='map' class="leaflet-container"></div>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.k/dist/leaflet.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet-draw@0.4.9/dist/leaflet.draw.css" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <script src="https://cdn.rawgit.com/mejackreed/Leaflet-IIIF/v1.0.1/leaflet-iiif.js"></script>
@@ -65,9 +78,10 @@
         'http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
             attribution: '&copy;<a href="http://www.esri.com/">Esri</a>, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
             maxZoom: 18,
-        }).addTo(map);
-    let Esri_WorldTopoMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
-        attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
+        });
+    let Esri_WorldTopoMap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     });
 
     Esri_WorldTopoMap.addTo(map);
@@ -107,7 +121,7 @@
 
         currentPosition.bindPopup("You are Here!").openPopup(console.log("Located"));
         map.setView([currentPosition._latlng.lat,currentPosition._latlng.lng],12);
-
+        console.log('Found');
     }
 
     function onLocationError(e) {
@@ -118,8 +132,8 @@
     map.on('locationerror', onLocationError);
 
     function locate() {
+        console.log('Finding...');
         map.locate({ maxZoom: 16});
-
     }
 
     let results = L.layerGroup().addTo(map);
@@ -139,14 +153,147 @@
 
     });
 
-
-
     //Drawing Features being created
 
+//
+//   
+//    var fireItems = new L.FeatureGroup();
+//    // Initialise the draw control and pass it the FeatureGroup of editable layers
+//    var fireControl = new L.Control.Draw({
+//        draw: {
+//            polyline: {
+//                shapeOptions: {
+//                    color: '#ea1c18',
+//                    weight: 10
+//                }
+//            },
+//            polygon: {
+//                allowIntersection: false,
+//                drawError: {
+//                    color: '#ea1c18',
+//                    message: 'you can\'t draw that!'
+//                },
+//                shapeOptions: {
+//                    color: '#ea1c18'
+//                }
+//            },
+//            circle: false, // Turns off this drawing tool
+//            rectangle: {
+//                shapeOptions: {
+//                    clickable: false,
+//                    color:'#ea1c18'
+//                }
+//            },
+//            edit: {
+//                featureGroup: fireItems, //REQUIRED!!
+//
+//            }
+//
+//        }
+//
+//    });
+//
+//    var snowItems = new L.FeatureGroup();
+//    // Initialise the draw control and pass it the FeatureGroup of editable layers
+//    var snowControl = new L.Control.Draw({
+//        draw: {
+//            polyline: {
+//                shapeOptions: {
+//                    color: '#dcdcdc',
+//                    weight: 10
+//                }
+//            },
+//            polygon: {
+//                allowIntersection: false,
+//                drawError:{
+//                    color: '#dcdcdc',
+//                    message: 'no!'
+//                },
+//                shapeOptions: {
+//                    color: '#dcdcdc'
+//                }
+//            },
+//            circle: false,
+//            rectangle: {
+//                shapeOptions: {
+//                    color:'#dcdcdc',
+//                    clickable: true
+//                }
+//        },
+//
+//        }
+//    });
+//
+//    var electricalItems = new L.FeatureGroup();
+//    // Initialise the draw control and pass it the FeatureGroup of editable layers
+//    var electricalControl = new L.Control.Draw({
+//        draw: {
+//            polyline: {
+//                shapeOptions: {
+//                    color: '#dcc511',
+//                    weight: 10
+//                }
+//            },
+//            polygon: {
+//                allowIntersection: false,
+//                drawError: {
+//                    color: '#dcc511',
+//                    message: 'NOPE!'
+//                },
+//                shapeOptions: {
+//                    color: '#dcc511'
+//                }
+//            },
+//            circle: false, // Turns off this drawing tool
+//            rectangle: {
+//                shapeOptions: {
+//                    clickable: false,
+//                    color: '#dcc511',
+//                }
+//            },
+//            edit: {
+//                featureGroup: electricalItems, //REQUIRED!!
+//                remove: false
+//            }
+//
+//        }
+//    });
+//
+//
+//
+//    map.on(L.Draw.Event.CREATED, function (e) {
+//
+//        let type = e.layerType;
+//        let layer = e.layer;
+//        // Do whatever else you need to. (save to db, add to map etc)
+//
+//        floodItems.addLayer(layer);
+//        fireItems.addLayer(layer);
+//        snowItems.addLayer(layer);
+//        electricalItems.addLayer(layer);
+//
+//        console.log('floodPolygon')
+//    });
+//
+//
+//    let labelCount = 1;
+//    function PopUp() {
+//        if (labelCount===1) {
+//            // Initialise the FeatureGroup to store editable layers
+//            map.addLayer(snowItems);
+//            map.addControl(snowControl);
+//            labelCount++;
+//        }
+//        else {
+//            map.removeControl(snowControl);
+//            map.removeControl(snowItems);
+//            labelCount--;
+//        }
+//    }
 
-    var floodItems = new L.FeatureGroup();
+    let floodItems = new L.FeatureGroup();
     // Initialise the draw control and pass it the FeatureGroup of editable layers
-    var floodControl = new L.Control.Draw({
+    let floodControl = new L.Control.Draw({
         draw: {
             polyline: {
                 shapeOptions: {
@@ -167,140 +314,26 @@
             circle: false, // Turns off this drawing tool
             rectangle: {
                 shapeOptions: {
-                    clickable: false
+                    clickable: false,
+                    color: "#2373dc"
                 }
-            },
-            edit: {
-                featureGroup: floodItems, //REQUIRED!!
-                remove: false
             }
-
-        }
-
-    });
-
-    var fireItems = new L.FeatureGroup();
-    // Initialise the draw control and pass it the FeatureGroup of editable layers
-    var fireControl = new L.Control.Draw({
-        draw: {
-            polyline: {
-                shapeOptions: {
-                    color: '#ea1c18',
-                    weight: 10
-                }
-            },
-            polygon: {
-                allowIntersection: false,
-                drawError: {
-                    color: '#ea1c18',
-                    message: 'you can\'t draw that!'
-                },
-                shapeOptions: {
-                    color: '#ea1c18'
-                }
-            },
-            circle: false, // Turns off this drawing tool
-            rectangle: {
-                shapeOptions: {
-                    clickable: false
-                }
-            },
-            edit: {
-                featureGroup: fireItems, //REQUIRED!!
-                remove: false
-            }
-
-        }
-
-    });
-
-    var snowItems = new L.FeatureGroup();
-    // Initialise the draw control and pass it the FeatureGroup of editable layers
-    var snowControl = new L.Control.Draw({
-        draw: {
-            polyline: {
-                shapeOptions: {
-                    color: '#dcdcdc',
-                    weight: 10
-                }
-            },
-            polygon: {
-                allowIntersection: false,
-                drawError:{
-                    color: '#dcdcdc',
-                    message: 'no!'
-                },
-                shapeOptions: {
-                    color: '#dcdcdc'
-                }
-            },
-            circle: false,
-            rectangle: {
-                shapeOptions: {
-                    clickable: false
-                }
         },
+
         edit: {
-            featureGroup: snowItems, //REQUIRED!!
-            remove: false
-        }
-
+            featureGroup: floodItems
         }
     });
-
-    var electricalItems = new L.FeatureGroup();
-    // Initialise the draw control and pass it the FeatureGroup of editable layers
-    var electricalControl = new L.Control.Draw({
-        draw: {
-            polyline: {
-                shapeOptions: {
-                    color: '#dcc511',
-                    weight: 10
-                }
-            },
-            polygon: {
-                allowIntersection: false,
-                drawError: {
-                    color: '#dcc511',
-                    message: 'NOPE!'
-                },
-                shapeOptions: {
-                    color: '#dcc511'
-                }
-            },
-            circle: false, // Turns off this drawing tool
-            rectangle: {
-                shapeOptions: {
-                    clickable: false
-                }
-            },
-            edit: {
-                featureGroup: electricalItems, //REQUIRED!!
-                remove: false
-            }
-
-        }
-    });
-
-
 
     map.on(L.Draw.Event.CREATED, function (e) {
-
         let type = e.layerType;
         let layer = e.layer;
         // Do whatever else you need to. (save to db, add to map etc)
-
         floodItems.addLayer(layer);
-        fireItems.addLayer(layer);
-        snowItems.addLayer(layer);
-        electricalItems.addLayer(layer);
-
-        console.log('floodPolygon')
+        console.log('drawingPolygon')
     });
-
-    
     let labelCount = 1;
-    function labelArea() {
+    function PopUp() {
         if (labelCount===1) {
             // Initialise the FeatureGroup to store editable layers
             map.addLayer(floodItems);
@@ -313,8 +346,6 @@
             labelCount--;
         }
     }
-
-    
 
 //Creating markers and popup displays
     let allMarkers = L.layerGroup([]);
