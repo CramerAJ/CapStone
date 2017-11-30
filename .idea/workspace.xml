@@ -40,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chatChannel.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="chatChannel.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chatChannel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="915">
-              <caret line="63" column="180" lean-forward="false" selection-start-line="63" selection-start-column="180" selection-end-line="63" selection-end-column="180" />
+            <state relative-caret-position="272">
+              <caret line="63" column="45" lean-forward="false" selection-start-line="63" selection-start-column="45" selection-end-line="63" selection-end-column="45" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
@@ -52,7 +52,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mapStyle.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mapStyle.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mapStyle.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="486">
@@ -99,9 +99,9 @@
       <list>
         <option value="$PROJECT_DIR$/leaflet.js" />
         <option value="$PROJECT_DIR$/login.html" />
-        <option value="$PROJECT_DIR$/chatChannel.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/mapStyle.css" />
+        <option value="$PROJECT_DIR$/chatChannel.js" />
       </list>
     </option>
   </component>
@@ -319,12 +319,12 @@
       <workItem from="1511226174530" duration="708000" />
       <workItem from="1511817103938" duration="3465000" />
       <workItem from="1511908502755" duration="1435000" />
-      <workItem from="1512002315202" duration="3887000" />
+      <workItem from="1512002315202" duration="4243000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54385000" />
+    <option name="totallyTimeSpent" value="54741000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -752,16 +752,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chatChannel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="63" column="180" lean-forward="false" selection-start-line="63" selection-start-column="180" selection-end-line="63" selection-end-column="180" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mapStyle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
@@ -772,6 +762,16 @@
             <element signature="e#1608#1631#0" expanded="false" />
             <element signature="e#1651#1751#0" expanded="false" />
             <element signature="e#1753#1861#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chatChannel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="63" column="45" lean-forward="false" selection-start-line="63" selection-start-column="45" selection-end-line="63" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
           </folding>
         </state>
       </provider>

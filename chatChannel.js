@@ -61,7 +61,7 @@ drone.on('error', error => {
 
 function getRandomName() {
     const adjs = ['Cramers'];
-    const nouns = ['Butt','Chair','Table','Bicep','LeftLeg','RightLeg','Hat','Sock','Pants','4-iron','5-iron','6-iron','7-iron','8-iron','9-iron','5-Wood','3-Wood','Driver','Putter'];
+    const nouns = ['Brachioradialis','Butt','Bicep','LeftLeg','RightLeg','Hat','Sock','Pants','4-iron','5-iron','6-iron','7-iron','8-iron','9-iron','5-Wood','3-Wood','Driver','Putter'];
     return (
         adjs[Math.floor(Math.random() * adjs.length)] +
         "_" +
