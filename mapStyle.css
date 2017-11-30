@@ -63,6 +63,7 @@
 .button4 {background-color: #122b40;}
 .button6 {background-color: #1502a8;}
 .button7 {background-color: #00a814;}
+.button8 {background-color: #a81d39;}
 
 .sidenav {
     height: 100%;
@@ -99,8 +100,6 @@
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
-
-
 
 .login-page {
     width: 100%;
@@ -167,3 +166,38 @@
     font-size: 48px;
 }
 
+
+.members-count,
+.members-list,
+.messages {
+    border: 1px solid #e4e4e4;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.messages {
+    flex-shrink: 1;
+    overflow: auto;
+}
+.message {
+    padding: 5px 0;
+}
+.message .member {
+    display: inline-block;
+}
+.member {
+    padding-right: 10px;
+    position: relative;
+}
+.message-form {
+    display: flex;
+    flex-shrink: 0;
+}
+.message-form__input {
+    flex-grow: 1;
+    border: 1px solid #dfdfdf;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+.message-form__button {
+    margin: 10px;
+}

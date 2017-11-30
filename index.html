@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="css/leaflet.extra-markers.min.css">
+   <!-- <link rel="stylesheet" href="css/leaflet.extra-markers.min.css">-->
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.1.0/dist/leaflet.css"
           integrity="sha512-wcw6ts8Anuw10Mzh9Ytw4pylW8+NAD4ch3lqm9lzAsTxg0GFeJgoAtxuCLREZSC5lUXdVyo/7yfsqFjQ4S+aKw=="
@@ -18,6 +18,8 @@
             integrity="sha512-mNqn2Wg7tSToJhvHcqfzLMU6J4mkOImSPTxVZAdo+lcPlk+GhZmYgACEe0x35K7YzW1zJ7XyJV/TT1MrdXvMcA=="
             crossorigin=""></script>
     <link rel="stylesheet" href="mapStyle.css">
+    <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+    <script src="chatChannel.js"></script>
 
 </head>
 <body style="height: 100%;">
@@ -26,7 +28,7 @@
 <script src="./leaflet-src.js"></script>
 <script src="./leaflet.js"></script>
 
-<script src="js/leaflet.extra-markers.min.js"></script>
+<!--<script src="js/leaflet.extra-markers.min.js"></script>-->
 
 <script src="./leaflet-sidebar/src/L.Control.Sidebar.js"></script>
 <link rel="stylesheet" href="./leaflet-sidebar/src/L.Control.Sidebar.css"/>
@@ -48,6 +50,7 @@
 <div id="headerImage" style="z-index: 1000; background-color: white; width: 100%;" class="headcontainer" >
     <button id = "locate" class="button button4" onclick="locate()">Locate Me</button>
     <button id="openNav" class="button button6" onclick="PopUp()">Label Area</button>
+
  <!--   <div class="dropup">
         <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Label Area<span class="caret"></span></button>
         <ul class="dropdown-menu">
@@ -59,10 +62,11 @@
     </div>
 -->
     <button id = "trace" class="button button7" onclick="viewArea()">Edit View</button>
+    <button id="chat" class="button button8" onclick="ChatRoom()">Chat</button>
 </div>
 
 <div id='map' class="leaflet-container"></div>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.k/dist/leaflet.css" />
+<!--<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.k/dist/leaflet.css" />-->
 <link rel="stylesheet" href="https://unpkg.com/leaflet-draw@0.4.9/dist/leaflet.draw.css" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <script src="https://cdn.rawgit.com/mejackreed/Leaflet-IIIF/v1.0.1/leaflet-iiif.js"></script>
@@ -95,7 +99,6 @@
 //    baseMaps.addTo(map);
 
     // User Location Tool
-
 
     let currentPosition, currLatlngObject;
     let currentLatlng = [];
@@ -156,7 +159,7 @@
     //Drawing Features being created
 
 //
-//   
+//
 //    var fireItems = new L.FeatureGroup();
 //    // Initialise the draw control and pass it the FeatureGroup of editable layers
 //    var fireControl = new L.Control.Draw({
@@ -478,6 +481,18 @@
     </script>
 </div>
 
+<div id="chatRoom_html">
+<div class="members-count"></div>
+<div class="members-list"></div>
+<div class="messages"></div>
+<form class="message-form" onsubmit="return false;">
+    <input class="message-form__input" placeholder="Type a message.." type="text"/>
+    <input class="message-form__button" value="Send" type="submit"/>
+</form>
+</div>
+<script>
+    $('#chatRoom_html').hide();
+</script>
 </body>
 
 </html>
