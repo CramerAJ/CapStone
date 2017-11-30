@@ -19,7 +19,7 @@
             crossorigin=""></script>
     <link rel="stylesheet" href="mapStyle.css">
     <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
-    <script src="chatChannel.js"></script>
+
 
 </head>
 <body style="height: 100%;">
@@ -27,8 +27,6 @@
 <script src="./jquery-3.2.1.min.js"></script>
 <script src="./leaflet-src.js"></script>
 <script src="./leaflet.js"></script>
-
-<!--<script src="js/leaflet.extra-markers.min.js"></script>-->
 
 <script src="./leaflet-sidebar/src/L.Control.Sidebar.js"></script>
 <link rel="stylesheet" href="./leaflet-sidebar/src/L.Control.Sidebar.css"/>
@@ -62,11 +60,11 @@
     </div>
 -->
     <button id = "trace" class="button button7" onclick="viewArea()">Edit View</button>
-    <button id="chat" class="button button8" onclick="ChatRoom()">Chat</button>
+    <button id="chat" class="button button8" onclick="chatRoom()">Chat</button>
 </div>
 
 <div id='map' class="leaflet-container"></div>
-<!--<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.k/dist/leaflet.css" />-->
+
 <link rel="stylesheet" href="https://unpkg.com/leaflet-draw@0.4.9/dist/leaflet.draw.css" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <script src="https://cdn.rawgit.com/mejackreed/Leaflet-IIIF/v1.0.1/leaflet-iiif.js"></script>
@@ -426,8 +424,35 @@
 
 </script>
 </div>
+<div id="chatRoom_html" style="overflow: scroll">
 
-<script> $('#mapPage').hide()</script>
+    <div class="members-count"></div>
+    <div class="members-list"></div>
+    <div class="messages"></div>
+    <form class="message-form" onsubmit="return false;">
+        <input class="message-form__input" placeholder="Type a message.." type="text"/>
+        <input class="message-form__button" value="Send" type="submit"/>
+    </form>
+</div>
+<script src="chatChannel.js">
+</script>
+<script> $('#mapPage').hide();
+         $('#chatRoom_html').hide();
+let chatCount = 1;
+function chatRoom(){
+
+    if(chatCount===1){
+        $('#chatRoom_html').show();
+        console.log('Chat displayed');
+        chatCount++;
+    }
+    else{
+        $('#chatRoom_html').hide();
+        console.log('Chat hidden');
+        chatCount--;
+    }
+
+}</script>
 <div class="login-page">
     <div class="form">
         <form class="register-form">
@@ -481,18 +506,7 @@
     </script>
 </div>
 
-<div id="chatRoom_html">
-<div class="members-count"></div>
-<div class="members-list"></div>
-<div class="messages"></div>
-<form class="message-form" onsubmit="return false;">
-    <input class="message-form__input" placeholder="Type a message.." type="text"/>
-    <input class="message-form__button" value="Send" type="submit"/>
-</form>
-</div>
-<script>
-    $('#chatRoom_html').hide();
-</script>
+
 </body>
 
 </html>

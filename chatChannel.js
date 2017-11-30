@@ -9,25 +9,21 @@ const drone = new ScaleDrone(CHANNEL_ID, {
         color: getRandomColor(),
     },
 });
-const DOM = {
-    membersCount: document.querySelector('.members-count'),
-    membersList: document.querySelector('.members-list'),
-    messages: document.querySelector('.messages'),
-    input: document.querySelector('.message-form__input'),
-    form: document.querySelector('.message-form'),
-};
+
 let members = [];
 
 drone.on('open', error => {
     if (error) {
         return console.error(error);
     }
+    console.log('Successfully connected to Scaledrone');
 
     const room = drone.subscribe('observable-room');
     room.on('open', error => {
         if (error) {
             return console.error(error);
         }
+        console.log('Successfully joined room');
     });
 
     room.on('members', m => {
@@ -64,8 +60,8 @@ drone.on('error', error => {
 });
 
 function getRandomName() {
-    const adjs = ["autumn", "hidden", "bitter", "misty", "silent", "empty", "dry", "dark", "summer", "icy", "delicate", "quiet", "white", "cool", "spring", "winter", "patient", "twilight", "dawn", "crimson", "wispy", "weathered", "frosty", "green", "long", "late", "lingering", "bold", "little", "morning", "muddy", "old", "red", "rough", "still", "small", "nameless"];
-    const nouns = ["waterfall", "river", "breeze", "moon", "rain", "wind", "sea", "morning", "snow", "lake", "sunset", "pine", "shadow", "leaf", "dawn", "glitter", "forest", "hill", "cloud", "meadow", "sun", "glade", "bird", "brook", "butterfly"];
+    const adjs = ['Cramers'];
+    const nouns = ['Butt','Chair','Table','Bicep','LeftLeg','RightLeg','Hat','Sock','Pants','4-iron','5-iron','6-iron','7-iron','8-iron','9-iron','5-Wood','3-Wood','Driver','Putter'];
     return (
         adjs[Math.floor(Math.random() * adjs.length)] +
         "_" +
@@ -77,10 +73,15 @@ function getRandomColor() {
     return '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16);
 }
 
+//------------- DOM STUFF
 
-
-
-
+const DOM = {
+    membersCount: document.querySelector('.members-count'),
+    membersList: document.querySelector('.members-list'),
+    messages: document.querySelector('.messages'),
+    input: document.querySelector('.message-form__input'),
+    form: document.querySelector('.message-form'),
+};
 
 DOM.form.addEventListener('submit', sendMessage);
 
@@ -95,15 +96,6 @@ function sendMessage() {
         message: value,
     });
 }
-
-
-
-
-
-
-//------------- DOM STUFF
-
-
 
 function createMemberElement(member) {
     const { name, color } = member.clientData;
