@@ -80,9 +80,13 @@
         'http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
             attribution: '&copy;<a href="http://www.esri.com/">Esri</a>, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
             maxZoom: 18,
+
         });
     let Esri_WorldTopoMap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
+        minZoom:4,
+        noWrap: true,
+        //maxBounds: bounds,
+        maxBoundsViscosity: 1.0,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     });
 
@@ -119,8 +123,11 @@
 
         currentLatlng.push(currLatlngObject.lat);
         currentLatlng.push(currLatlngObject.lng);
-
-        currentPosition.bindPopup("You are Here!").openPopup(console.log("Located"));
+        alert
+        currentPosition.bindPopup("User: Cramer"
+            +'<br>'+'Status: House Extremely Flooded'
+            +'<br>'+'Event Type: Flooded'
+            +'<br>'+'Pictures: None').openPopup(console.log("Located"));
         map.setView([currentPosition._latlng.lat,currentPosition._latlng.lng],12);
         console.log('Found');
     }
@@ -331,6 +338,7 @@
         let layer = e.layer;
         // Do whatever else you need to. (save to db, add to map etc)
         floodItems.addLayer(layer);
+        console.log(e.layer);
         console.log('drawingPolygon')
     });
     let labelCount = 1;
@@ -354,6 +362,8 @@
     let shelters = L.layerGroup([]);
     let floodArea = L.layerGroup([]);
     let fireArea = L.layerGroup([]);
+    let snowArea = L.layerGroup([]);
+    let electricityArea = L.layerGroup([]);
 
     let newmarker = L.marker([44.808147, -68.795013]).addTo(allMarkers).addTo(users);
     newmarker.bindPopup(
@@ -380,11 +390,17 @@
     ).openPopup(console.log("Flooded Area"));
 
     let fire = L.circle([44.918147, -67.875013],
-        {radius: 3800,
+        {radius: 6800,
             color:"#f40039"}).addTo(allMarkers).addTo(fireArea);
     fire.bindPopup(
         'Fire!!!'+'</br>'
     ).openPopup(console.log("Fire Area"));
+    let snow = L.circle([46.918147, -67.875013],
+        {radius: 6800,
+            color:"#dcdcdc"}).addTo(allMarkers).addTo(snowArea);
+    snow.bindPopup(
+        'Snow'+'</br>'
+    ).openPopup(console.log("Snow"));
 
 
     let newmarker3 = L.marker([44.808147, -68.765013]).addTo(allMarkers).addTo(users);
@@ -403,8 +419,10 @@
         'Everything': allMarkers,
         'Users': users,
         'shelters': shelters,
-        'Flooded Area': floodArea,
-        'Fire' :fireArea
+        'Flooding': floodArea,
+        'Fire' :fireArea,
+        'Snow' :snowArea,
+        'Electricity' :electricityArea,
     };
     let polygonControl = L.control.layers(polygons,null);
 
