@@ -123,13 +123,14 @@
 
         currentLatlng.push(currLatlngObject.lat);
         currentLatlng.push(currLatlngObject.lng);
-        alert
+
         currentPosition.bindPopup("User: Cramer"
             +'<br>'+'Status: House Extremely Flooded'
             +'<br>'+'Event Type: Flooded'
             +'<br>'+'Pictures: None').openPopup(console.log("Located"));
         map.setView([currentPosition._latlng.lat,currentPosition._latlng.lng],12);
         console.log('Found');
+
     }
 
     function onLocationError(e) {
@@ -487,14 +488,83 @@ function chatRoom(){
             <input id="userLogin" type="text" placeholder="username" value=""/>
             <input id="password"  type="password" placeholder="password" value=""/>
             <button type = "button" onclick="login()">login</button>
-            <!--<p class="message">Not registered? <a href="#">Create an account</a></p>-->
+            <p class="message">Not registered? <a onclick="createAccount()" href="#">Create an account</a></p>
         </form>
         <!-- IF WIFI IS DOWN OR SERVER IS DOWN user should still be allowed to draw or add information
         and store it on their phone, so the map is updated once they connect to wifi or a cell tower-->
     </div>
+</div>
+
+<!-- this is the account creation page-->
+<div class ="account-page" style="background:linear-gradient(to bottom,#5bc0de,#5e5e5e)">
+    <div class="container" style="padding: 16px">
+        <h1>Sign Up</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+
+        <label for="firstName"><b>First Name</b></label>
+        <input type="text" placeholder="First Name" name="firstName" required>
+
+        <label for="lastName"><b>Last Name</b></label>
+        <input type="text" placeholder="Last Name" name="lastName" required>
+
+        <label for="country"><b>Country</b></label>
+        <input type="text" placeholder="Country" name="country" required>
+
+        <label for="state"><b>State</b></label>
+        <input type="text" placeholder="State" name="state" required>
+
+        <label for="zipCode"><b>Zipcode</b></label>
+        <input type="text" placeholder="Zipcode" name="zipcode" required>
+
+        <label for="address"><b>Address</b></label>
+        <input type="text" placeholder="Address" name="address" required>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+        <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label>
+
+        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+        <div class="clearfix"
+             style=" content: '';clear: both; display: table;">
+            <button type="button"
+                    class="cancelbtn"
+                    style="  float: left;width: 50%;padding: 14px 20px;background-color: #f44336;"
+                    onclick="cancel()">Cancel</button>
+            <button type="submit"
+                    class="signupbtn"
+                    style="float: left; width: 50%;"
+            >Sign Up</button>
+        </div>
+    </div>
+
+
+</div>
 
     <script>
 
+
+        function createAccount(){
+            $('.login-page').hide();
+            $('.account-page').show();
+        }
+        function cancel(){
+            $('.account-page').hide();
+            $('.login-page').show();
+        }
+        function submitAccount(){
+
+        }
         function login() {
 
             let userName = document.getElementById("userLogin").value;
@@ -522,7 +592,7 @@ function chatRoom(){
 
 
     </script>
-</div>
+
 
 
 </body>
