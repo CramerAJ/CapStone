@@ -38,16 +38,77 @@
 
 <div id="mapPage">
 
+<!--
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="#">Electric Line</a>
     <a href="#">Fallen Tree</a>
     <a href="#">Point</a>
 </div>
+-->
 
-<div id="headerImage" style="z-index: 1000; background-color: white; width: 100%;" class="headcontainer" >
-    <button id = "locate" class="button button4" onclick="locate()">Locate Me</button>
-    <button id="openNav" class="button button6" onclick="PopUp()">Label Area</button>
+    <div id="headerImage" style="z-index: 1000; background-color: white; width: 100%;" class="headcontainer" >
+    <button id = "locate" class="button button4" onclick="locate()">Find Me</button>
+    <button id = "userAttributes" class="button button7" onclick="userAttrib()">Surroundings</button>
+
+    <div id="mySidenavAttributes" class="sidenavAttributes"
+         style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: large">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+       <!-- <div id="userAcountNameDIV"style="padding-left: 4%;height: 5%; width: 100%">
+            <label id="userAccountName" style="font-size: larger"> Surrounding Attributes:</label>
+        </div>-->
+        <div class="innerNavDIV">
+            <br>
+            <label id="locationStatus" > Location Status:</label>
+            <br>
+            <label class="statusRadioButton">Inside
+                <input type="radio" class="statusRadio" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <label class="statusRadioButton">Outside
+                <input type="radio" class="statusRadio" name="radio">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <div class="innerNavDIV" >
+        <label id="viewableWeather" > Viewable Weather Types:</label>
+            <label class="weatherCheckbox">Fire
+                <input type="checkbox" class="weatherBoxes" >
+                <span class="checkmark"></span>
+            </label>
+            <label class="weatherCheckbox">Snow
+                <input type="checkbox" class="weatherBoxes" >
+                <span class="checkmark"></span>
+            </label>
+            <label class="weatherCheckbox">Flooding
+                <input type="checkbox" class="weatherBoxes" >
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <div class="innerNavDIV">
+            <label id="imageUploader"> Upload Images: </label>
+            <form action="/action_page.php">
+                <input id="userImage" type="file" name="userImage" accept="image/x-png,image/gif,image/jpeg" />
+
+            </form>
+
+        </div>
+
+        <script>
+
+            let checkedLocation = $('.statusRadio:checked').val();
+            let checkedWeather = $('.weatherBoxes:checked').val();
+            let images = $('#userImage').val();
+            console.log(checkedLocation+''+checkedWeather);
+            console.log(images);
+
+        </script>
+    </div>
+
+
+   <!-- <button id="openNav" class="button button6" onclick="PopUp()">Label Area</button>
 
  <!--   <div class="dropup">
         <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Label Area<span class="caret"></span></button>
@@ -58,9 +119,9 @@
             <li><a href="#">Electric</a></li>
         </ul>
     </div>
--->
+
     <button id = "trace" class="button button7" onclick="viewArea()">Edit View</button>
-    <button id="chat" class="button button8" onclick="chatRoom()">Chat</button>
+    <button id="chat" class="button button8" onclick="chatRoom()">Chat</button>-->
 </div>
 
 <div id='map' class="leaflet-container"></div>
@@ -72,16 +133,9 @@
 
 <script>
     //Creates the basemap
-    let map = L.map('map').setView([42.877742, -97.380979], 4);
+    let map = L.map('map').setView([42.877742, -97.380979], 5);
     //Portland 43.6515, -70.2553
-    // Additional maps
-
-    let Satellite =  L.tileLayer(
-        'http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-            attribution: '&copy;<a href="http://www.esri.com/">Esri</a>, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
-            maxZoom: 18,
-
-        });
+    //Basemap TileLayer
     let Esri_WorldTopoMap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         minZoom:4,
         noWrap: true,
@@ -89,18 +143,12 @@
         maxBoundsViscosity: 1.0,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     });
-
+    //Adding it to the map
     Esri_WorldTopoMap.addTo(map);
 
-//    let Basemaps ={
-//        'Satelite':Satellite,
-//        'Static Map': Esri_WorldTopoMap,
-//
-//    };
-//    let baseMaps = L.control.layers(Basemaps,null);
-//    baseMaps.addTo(map);
 
-    // User Location Tool
+
+    // Find Me Tool
 
     let currentPosition, currLatlngObject;
     let currentLatlng = [];
@@ -110,12 +158,6 @@
         if (currentPosition) {
             map.removeLayer(currentPosition);
         }
-//        let redMarker = L.ExtraMarkers.icon({
-//            icon: 'fa-coffee',
-//            markerColor: 'red',
-//            shape: 'square',
-//        });
-//        icon: redMarker,
 
         currentPosition = L.marker(e.latlng,{title: "Location", draggable: false, color: "red"}).addTo(map);
 
@@ -125,24 +167,32 @@
         currentLatlng.push(currLatlngObject.lng);
 
         currentPosition.bindPopup("User: Cramer"
-            +'<br>'+'Status: House Extremely Flooded'
-            +'<br>'+'Event Type: Flooded'
-            +'<br>'+'Pictures: None').openPopup(console.log("Located"));
-        map.setView([currentPosition._latlng.lat,currentPosition._latlng.lng],12);
+            +'<br>'+'Status:'+ checkedLocation+
+            +'<br>'+'Weather Type:'+ checkedWeather+
+            +'<br>'+'Pictures:'+images).openPopup(console.log("Located"));
+        map.setView([currentPosition._latlng.lat,currentPosition._latlng.lng],16);
         console.log('Found');
 
     }
-
+    //Locating Error Function
     function onLocationError(e) {
-        console.log("location lost");
+        console.log("Unable to Locate");
         console.log(e);
     }
     map.on('locationfound', onLocationFound);
     map.on('locationerror', onLocationError);
-
     function locate() {
         console.log('Finding...');
-        map.locate({ maxZoom: 16});
+        map.locate({ maxZoom: 18});
+    }
+
+    //Setting User Attributes and surroundings
+
+    function userAttrib(){
+        document.getElementById("mySidenavAttributes").style.width = "250px";
+    }
+    function closeNav() {
+        document.getElementById("mySidenavAttributes").style.width = "0";
     }
 
     let results = L.layerGroup().addTo(map);
@@ -164,8 +214,6 @@
 
     //Drawing Features being created
 
-//
-//
 //    var fireItems = new L.FeatureGroup();
 //    // Initialise the draw control and pass it the FeatureGroup of editable layers
 //    var fireControl = new L.Control.Draw({
@@ -342,6 +390,7 @@
         console.log(e.layer);
         console.log('drawingPolygon')
     });
+
     let labelCount = 1;
     function PopUp() {
         if (labelCount===1) {
@@ -453,10 +502,14 @@
         <input class="message-form__button" value="Send" type="submit"/>
     </form>
 </div>
-<script src="chatChannel.js">
-</script>
-<script> $('#mapPage').hide();
+
+
+<script src="chatChannel.js"></script>
+
+<script>
+    $('#mapPage').hide();
          $('#chatRoom_html').hide();
+
 let chatCount = 1;
 function chatRoom(){
 
@@ -472,6 +525,7 @@ function chatRoom(){
     }
 
 }</script>
+
 <div class="login-page">
     <div class="form">
         <form class="register-form">
@@ -494,7 +548,6 @@ function chatRoom(){
         and store it on their phone, so the map is updated once they connect to wifi or a cell tower-->
     </div>
 </div>
-
 <!-- this is the account creation page-->
 <div class ="account-page" style="background:linear-gradient(to bottom,#5bc0de,#5e5e5e)">
     <div class="container" style="padding: 16px">
@@ -502,31 +555,31 @@ function chatRoom(){
         <p>Please fill in this form to create an account.</p>
         <hr>
 
-        <label for="firstName"><b>First Name</b></label>
+        <label id = "firstName"><b>First Name</b></label>
         <input type="text" placeholder="First Name" name="firstName" required>
 
-        <label for="lastName"><b>Last Name</b></label>
+        <label id ="lastName"><b>Last Name</b></label>
         <input type="text" placeholder="Last Name" name="lastName" required>
 
-        <label for="country"><b>Country</b></label>
+        <label id ="country"><b>Country</b></label>
         <input type="text" placeholder="Country" name="country" required>
 
-        <label for="state"><b>State</b></label>
+        <label id="state"><b>State</b></label>
         <input type="text" placeholder="State" name="state" required>
 
-        <label for="zipCode"><b>Zipcode</b></label>
+        <label id="zipCode"><b>Zipcode</b></label>
         <input type="text" placeholder="Zipcode" name="zipcode" required>
 
-        <label for="address"><b>Address</b></label>
+        <label id ="address"><b>Address</b></label>
         <input type="text" placeholder="Address" name="address" required>
 
-        <label for="email"><b>Email</b></label>
+        <label id ="email"><b>Email</b></label>
         <input type="text" placeholder="Enter Email" name="email" required>
 
-        <label for="psw"><b>Password</b></label>
+        <label id ="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="psw" required>
 
-        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <label id ="psw-repeat"><b>Repeat Password</b></label>
         <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
 
         <label>
@@ -552,7 +605,7 @@ function chatRoom(){
 </div>
 
     <script>
-
+        $('.account-page').hide();
 
         function createAccount(){
             $('.login-page').hide();

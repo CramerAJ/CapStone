@@ -1,7 +1,7 @@
 #map {
     position: absolute;
     width: 100%;
-    height: 94%;
+    height: 92%;
     top:0;
     right:0;
     left:0;
@@ -9,7 +9,7 @@
 .headcontainer{
     width: 100%;
     position: absolute;
-    height: 42px;
+    height: 8%;
     bottom: 0;
     left:0;
     z-index: 4;
@@ -23,7 +23,7 @@
     border: none;
     color: white;
     width: 17%;
-    height: 30px;
+    height: 100%px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -56,15 +56,15 @@
         top: 3px;
 
     }
-    .button4{
-        value: 'Loc';
-    }
 }
-
-.button4 {background-color: #122b40;}
+.button4 {background-color: #122b40;  value: 'Loc';}
 .button6 {background-color: #1502a8;}
-.button7 {background-color: #00a814;}
+.button7 {background-color: #5bc0de;}
 .button8 {background-color: #a81d39;}
+.button9 {background-color: #a81d39;}
+.button10 {background-color: #a81d39;}
+.button11 {background-color: #a81d39;}
+.button12 {background-color: #a81d39;}
 
 .sidenav {
     height: 100%;
@@ -238,4 +238,182 @@ button {
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
+}
+/* SideNavigation Bar for Users Setting Attributes*/
+
+.sidenavAttributes {
+    height: 90%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    background-color: #4d9fb8;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidenavAttributes a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenavAttributes a:hover {
+    color: #f1f1f1;
+}
+
+.sidenavAttributes .closebtn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 36px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenavAttributes {padding-top: 15px;}
+    .sidenavAttributes a {font-size: 18px;}
+}
+
+
+
+
+
+
+/* The statusRadioButton */
+.statusRadioButton {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.statusRadioButton input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.statusRadioButton:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.statusRadioButton input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.statusRadioButton input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.statusRadioButton .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+.innerNavDIV{
+    padding-left: 4%;
+    height: 25%;
+    width:100%;
+}
+
+/* The weatherCheckbox */
+.weatherCheckbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.weatherCheckbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.weatherCheckbox:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.weatherCheckbox input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.weatherCheckbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.weatherCheckbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
