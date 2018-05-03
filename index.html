@@ -17,7 +17,10 @@
     <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js"
             integrity="sha512-mNqn2Wg7tSToJhvHcqfzLMU6J4mkOImSPTxVZAdo+lcPlk+GhZmYgACEe0x35K7YzW1zJ7XyJV/TT1MrdXvMcA=="
             crossorigin=""></script>
+
+    <!-- Style Sheet-->
     <link rel="stylesheet" href="mapStyle.css">
+    <!-- Calling My Chat room file-->
     <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
 
 
@@ -28,6 +31,7 @@
 <script src="./leaflet-src.js"></script>
 <script src="./leaflet.js"></script>
 
+
 <script src="./leaflet-sidebar/src/L.Control.Sidebar.js"></script>
 <link rel="stylesheet" href="./leaflet-sidebar/src/L.Control.Sidebar.css"/>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
@@ -35,103 +39,72 @@
 
 <link rel="stylesheet" href="https://unpkg.com/esri-leaflet-geocoder@2.2.4/dist/esri-leaflet-geocoder.css">
 <script src="https://unpkg.com/esri-leaflet-geocoder@2.2.4"></script>
+<script src="https://rawgithub.com/ismyrnow/Leaflet.groupedlayercontrol/master/src/leaflet.groupedlayercontrol.js"></script>
 
+
+<!-- Making the main page, being a spatial map -->
 <div id="mapPage">
 
-<!--
-<div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">Electric Line</a>
-    <a href="#">Fallen Tree</a>
-    <a href="#">Point</a>
-</div>
--->
-
     <div id="headerImage" style="z-index: 1000; background-color: white; width: 100%;" class="headcontainer" >
-    <button id = "locate" class="button button4" onclick="locate()">Find Me</button>
-    <button id = "userAttributes" class="button button7" onclick="userAttrib()">Surroundings</button>
 
-    <div id="mySidenavAttributes" class="sidenavAttributes"
-         style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: large">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-       <!-- <div id="userAcountNameDIV"style="padding-left: 4%;height: 5%; width: 100%">
+        <button id = "locate" class="button button4" onclick="locate()">Find Me</button>
+        <button id = "userSurroundings" class="button button7" onclick="userAttrib()">Surroundings</button>
+        <button id = "chat" class="button button9" onclick="chatRoom()">Chat</button>
+        <!--This is the label button part of my original idea its out for right now
+                <button id = "label" class="button button6" onclick="PopUp()">Label</button>-->
+
+
+
+        <div id="mySidenavAttributes" class="sidenavAttributes" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: large">
+
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- <div id="userAcountNameDIV"style="padding-left: 4%;height: 5%; width: 100%">
             <label id="userAccountName" style="font-size: larger"> Surrounding Attributes:</label>
         </div>-->
-        <div class="innerNavDIV">
-            <br>
-            <label id="locationStatus" > Location Status:</label>
-            <br>
-            <label class="statusRadioButton">Inside
-                <input type="radio" class="statusRadio" name="radio">
-                <span class="checkmark"></span>
-            </label>
-            <label class="statusRadioButton">Outside
-                <input type="radio" class="statusRadio" name="radio">
-                <span class="checkmark"></span>
-            </label>
+            <div class="innerNavDIV">
+                <br>
+                <label id="locationStatus" > Location Status:</label>
+                <br>
+                <label class="statusRadioButton">Inside
+                    <input type="radio" class="statusRadio" name="radio" value="Inside">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="statusRadioButton">Outside
+                    <input type="radio" class="statusRadio" name="radio" value="Outside">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="innerNavDIV" >
+                <label id="viewableWeather" > Viewable Weather Types:</label>
+                <label class="weatherCheckbox">Fire
+                    <input type="checkbox" class="weatherBoxes" id="fireWeather" value="Fire">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="weatherCheckbox">Snow
+                    <input type="checkbox" class="weatherBoxes" id="snowWeather"  value="Snow">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="weatherCheckbox">Flooding
+                    <input type="checkbox" class="weatherBoxes" id="floodingWeather" value="Flooding">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="innerNavDIV">
+                <label id="imageUploader"> Upload Images: </label>
+                <form action="/action_page.php">
+                    <input id="userImage" type="file" name="userImage" accept="image/x-png,image/gif,image/jpeg" />
+                </form>
+            </div>
         </div>
-
-        <div class="innerNavDIV" >
-        <label id="viewableWeather" > Viewable Weather Types:</label>
-            <label class="weatherCheckbox">Fire
-                <input type="checkbox" class="weatherBoxes" >
-                <span class="checkmark"></span>
-            </label>
-            <label class="weatherCheckbox">Snow
-                <input type="checkbox" class="weatherBoxes" >
-                <span class="checkmark"></span>
-            </label>
-            <label class="weatherCheckbox">Flooding
-                <input type="checkbox" class="weatherBoxes" >
-                <span class="checkmark"></span>
-            </label>
-        </div>
-
-        <div class="innerNavDIV">
-            <label id="imageUploader"> Upload Images: </label>
-            <form action="/action_page.php">
-                <input id="userImage" type="file" name="userImage" accept="image/x-png,image/gif,image/jpeg" />
-
-            </form>
-
-        </div>
-
-        <script>
-
-            let checkedLocation = $('.statusRadio:checked').val();
-            let checkedWeather = $('.weatherBoxes:checked').val();
-            let images = $('#userImage').val();
-            console.log(checkedLocation+''+checkedWeather);
-            console.log(images);
-
-        </script>
     </div>
+    <div id='map' class="leaflet-container"></div>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-draw@0.4.9/dist/leaflet.draw.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script src="https://cdn.rawgit.com/mejackreed/Leaflet-IIIF/v1.0.1/leaflet-iiif.js"></script>
+    <script src="https://unpkg.com/leaflet-draw@0.4.9/dist/leaflet.draw.js"></script>
 
+    <script>
 
-   <!-- <button id="openNav" class="button button6" onclick="PopUp()">Label Area</button>
-
- <!--   <div class="dropup">
-        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Label Area<span class="caret"></span></button>
-        <ul class="dropdown-menu">
-            <li><a href="#">Snow</a></li>
-            <li><a href="#">Flood</a></li>
-            <li><a href="#">Fire</a></li>
-            <li><a href="#">Electric</a></li>
-        </ul>
-    </div>
-
-    <button id = "trace" class="button button7" onclick="viewArea()">Edit View</button>
-    <button id="chat" class="button button8" onclick="chatRoom()">Chat</button>-->
-</div>
-
-<div id='map' class="leaflet-container"></div>
-
-<link rel="stylesheet" href="https://unpkg.com/leaflet-draw@0.4.9/dist/leaflet.draw.css" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-<script src="https://cdn.rawgit.com/mejackreed/Leaflet-IIIF/v1.0.1/leaflet-iiif.js"></script>
-<script src="https://unpkg.com/leaflet-draw@0.4.9/dist/leaflet.draw.js"></script>
-
-<script>
     //Creates the basemap
     let map = L.map('map').setView([42.877742, -97.380979], 5);
     //Portland 43.6515, -70.2553
@@ -143,23 +116,64 @@
         maxBoundsViscosity: 1.0,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     });
-    //Adding it to the map
+    let HERE_hybridDay = L.tileLayer('https://{s}.{base}.maps.cit.api.here.com/maptile/2.1/{type}/{mapID}/hybrid.day/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}', {
+        attribution: 'Map &copy; 1987-2014 <a href="http://developer.here.com">HERE</a>',
+        subdomains: '1234',
+        mapID: 'newest',
+        app_id: '<your app_id>',
+        app_code: '<your app_code>',
+        base: 'aerial',
+        maxZoom: 20,
+        type: 'maptile',
+        language: 'eng',
+        format: 'png8',
+        size: '256'
+    });
+    //Making it the base map on run
     Esri_WorldTopoMap.addTo(map);
 
+    //Declaring Differ LayerGroups:
+
+    let allUsers = L.layerGroup([]);
+    let otherUsers = L.layerGroup([]);
+    let floodingPolygons = L.layerGroup([]);
+    let firePolygons = L.layerGroup([]);
+    let noElectricityPolygons = L.layerGroup([]);
 
 
-    // Find Me Tool
+    // Locating User Tool
 
     let currentPosition, currLatlngObject;
     let currentLatlng = [];
 
+    let checkedLocation;
+//    let confirmedFire;
+//    let confirmedSnow;
+//    let confirmedFlooding ;
+//    let images;
+
+    function closeNav() {
+        let checkedLocation = $('.statusRadio:checked').val();
+        let confirmedFire = $('#fireWeather:checked').val();
+        let confirmedSnow = $('#snowWeather:checked').val();
+        let confirmedFlooding = $('#floodingWeather:checked').val();
+
+        let images = $('#userImage').val();
+        console.log(checkedLocation+' '+ confirmedFire+' '+confirmedFlooding+' '+confirmedSnow);
+
+        console.log(images);
+
+        document.getElementById("mySidenavAttributes").style.width = "0";
+
+
+    }
     function onLocationFound(e) {
 
         if (currentPosition) {
             map.removeLayer(currentPosition);
         }
 
-        currentPosition = L.marker(e.latlng,{title: "Location", draggable: false, color: "red"}).addTo(map);
+        currentPosition = L.marker(e.latlng,{title: "Location", draggable: false, color: "red"}).addTo(otherUsers).addTo(allUsers).addTo(map);
 
         currLatlngObject = currentPosition._latlng;
 
@@ -167,9 +181,10 @@
         currentLatlng.push(currLatlngObject.lng);
 
         currentPosition.bindPopup("User: Cramer"
-            +'<br>'+'Status:'+ checkedLocation+
-            +'<br>'+'Weather Type:'+ checkedWeather+
-            +'<br>'+'Pictures:'+images).openPopup(console.log("Located"));
+            +'<br>'+'Building Status:'+ ' Inside'+ '<br>'
+
+            +'<br>'+'Labeled Hazard: Flooding'+'<br>'
+            +'<br>'+'Pictures: None').openPopup(console.log("Located"));
         map.setView([currentPosition._latlng.lat,currentPosition._latlng.lng],16);
         console.log('Found');
 
@@ -191,9 +206,7 @@
     function userAttrib(){
         document.getElementById("mySidenavAttributes").style.width = "250px";
     }
-    function closeNav() {
-        document.getElementById("mySidenavAttributes").style.width = "0";
-    }
+
 
     let results = L.layerGroup().addTo(map);
     //GeoSearch plugin
@@ -212,283 +225,65 @@
 
     });
 
-    //Drawing Features being created
+    //Legend for User
+    //Legend/Key
 
-//    var fireItems = new L.FeatureGroup();
-//    // Initialise the draw control and pass it the FeatureGroup of editable layers
-//    var fireControl = new L.Control.Draw({
-//        draw: {
-//            polyline: {
-//                shapeOptions: {
-//                    color: '#ea1c18',
-//                    weight: 10
-//                }
-//            },
-//            polygon: {
-//                allowIntersection: false,
-//                drawError: {
-//                    color: '#ea1c18',
-//                    message: 'you can\'t draw that!'
-//                },
-//                shapeOptions: {
-//                    color: '#ea1c18'
-//                }
-//            },
-//            circle: false, // Turns off this drawing tool
-//            rectangle: {
-//                shapeOptions: {
-//                    clickable: false,
-//                    color:'#ea1c18'
-//                }
-//            },
-//            edit: {
-//                featureGroup: fireItems, //REQUIRED!!
-//
-//            }
-//
-//        }
-//
-//    });
-//
-//    var snowItems = new L.FeatureGroup();
-//    // Initialise the draw control and pass it the FeatureGroup of editable layers
-//    var snowControl = new L.Control.Draw({
-//        draw: {
-//            polyline: {
-//                shapeOptions: {
-//                    color: '#dcdcdc',
-//                    weight: 10
-//                }
-//            },
-//            polygon: {
-//                allowIntersection: false,
-//                drawError:{
-//                    color: '#dcdcdc',
-//                    message: 'no!'
-//                },
-//                shapeOptions: {
-//                    color: '#dcdcdc'
-//                }
-//            },
-//            circle: false,
-//            rectangle: {
-//                shapeOptions: {
-//                    color:'#dcdcdc',
-//                    clickable: true
-//                }
-//        },
-//
-//        }
-//    });
-//
-//    var electricalItems = new L.FeatureGroup();
-//    // Initialise the draw control and pass it the FeatureGroup of editable layers
-//    var electricalControl = new L.Control.Draw({
-//        draw: {
-//            polyline: {
-//                shapeOptions: {
-//                    color: '#dcc511',
-//                    weight: 10
-//                }
-//            },
-//            polygon: {
-//                allowIntersection: false,
-//                drawError: {
-//                    color: '#dcc511',
-//                    message: 'NOPE!'
-//                },
-//                shapeOptions: {
-//                    color: '#dcc511'
-//                }
-//            },
-//            circle: false, // Turns off this drawing tool
-//            rectangle: {
-//                shapeOptions: {
-//                    clickable: false,
-//                    color: '#dcc511',
-//                }
-//            },
-//            edit: {
-//                featureGroup: electricalItems, //REQUIRED!!
-//                remove: false
-//            }
-//
-//        }
-//    });
-//
-//
-//
-//    map.on(L.Draw.Event.CREATED, function (e) {
-//
-//        let type = e.layerType;
-//        let layer = e.layer;
-//        // Do whatever else you need to. (save to db, add to map etc)
-//
-//        floodItems.addLayer(layer);
-//        fireItems.addLayer(layer);
-//        snowItems.addLayer(layer);
-//        electricalItems.addLayer(layer);
-//
-//        console.log('floodPolygon')
-//    });
-//
-//
-//    let labelCount = 1;
-//    function PopUp() {
-//        if (labelCount===1) {
-//            // Initialise the FeatureGroup to store editable layers
-//            map.addLayer(snowItems);
-//            map.addControl(snowControl);
-//            labelCount++;
-//        }
-//        else {
-//            map.removeControl(snowControl);
-//            map.removeControl(snowItems);
-//            labelCount--;
-//        }
-//    }
+    let markerImg = document.createElement("png");
+    markerImg.setAttribute('src','marker-icon.png');
 
-    let floodItems = new L.FeatureGroup();
-    // Initialise the draw control and pass it the FeatureGroup of editable layers
-    let floodControl = new L.Control.Draw({
-        draw: {
-            polyline: {
-                shapeOptions: {
-                    color: '#2373dc',
-                    weight: 10
-                }
-            },
-            polygon: {
-                allowIntersection: false, // Restricts shapes to simple polygons
-                drawError: {
-                    color: '#2373dc', // Color the shape will turn when intersects
-                    message: 'you can\'t draw that!' // Message that will show when intersect
-                },
-                shapeOptions: {
-                    color: '#2373dc'
-                }
-            },
-            circle: false, // Turns off this drawing tool
-            rectangle: {
-                shapeOptions: {
-                    clickable: false,
-                    color: "#2373dc"
-                }
-            }
-        },
-
-        edit: {
-            featureGroup: floodItems
+    function getLColor(d) {
+        if (d === 1 ){
+            return "#009aa8";
         }
-    });
-
-    map.on(L.Draw.Event.CREATED, function (e) {
-        let type = e.layerType;
-        let layer = e.layer;
-        // Do whatever else you need to. (save to db, add to map etc)
-        floodItems.addLayer(layer);
-        console.log(e.layer);
-        console.log('drawingPolygon')
-    });
-
-    let labelCount = 1;
-    function PopUp() {
-        if (labelCount===1) {
-            // Initialise the FeatureGroup to store editable layers
-            map.addLayer(floodItems);
-            map.addControl(floodControl);
-            labelCount++;
+        else if (d === 2 ){
+            return "#a80009";
         }
-        else {
-            map.removeControl(floodControl);
-            map.removeControl(floodItems);
-            labelCount--;
+        else if (d === 3 ){
+            return "#cfd000";
         }
     }
 
-//Creating markers and popup displays
-    let allMarkers = L.layerGroup([]);
-    let users = L.layerGroup([]);
-    let shelters = L.layerGroup([]);
-    let floodArea = L.layerGroup([]);
-    let fireArea = L.layerGroup([]);
-    let snowArea = L.layerGroup([]);
-    let electricityArea = L.layerGroup([]);
+    let legend = L.control({position: 'bottomright'});
 
-    let newmarker = L.marker([44.808147, -68.795013]).addTo(allMarkers).addTo(users);
-    newmarker.bindPopup(
-        'User: Bob'+'</br>'+'<br/>'+
-        'Status: Safe'+'</br>'
-    ).openPopup(console.log("User"));
-    let newmarker1 = L.marker([44.808147, -68.785013]).addTo(allMarkers).addTo(users);
-    newmarker1.bindPopup(
-        'User: Fred'+'</br>'+'<br/>'+
-        'Status: Safe'+'</br>'
-    ).openPopup(console.log("User"));
-
-    let newmarker2 = L.circle([44.818147, -68.775013],
-        {radius: 2000,
-            color:"#09f40c"}).addTo(allMarkers).addTo(shelters);
-    newmarker2.bindPopup(
-        'Shelter'+'</br>'
-    ).openPopup(console.log("Safe Area"));
-    let flooding = L.circle([45.918147, -68.875013],
-        {radius: 28000,
-            color:"#0d00f4"}).addTo(allMarkers).addTo(floodArea);
-    flooding.bindPopup(
-        'Flooded Area'+'</br>'
-    ).openPopup(console.log("Flooded Area"));
-
-    let fire = L.circle([44.918147, -67.875013],
-        {radius: 6800,
-            color:"#f40039"}).addTo(allMarkers).addTo(fireArea);
-    fire.bindPopup(
-        'Fire!!!'+'</br>'
-    ).openPopup(console.log("Fire Area"));
-    let snow = L.circle([46.918147, -67.875013],
-        {radius: 6800,
-            color:"#dcdcdc"}).addTo(allMarkers).addTo(snowArea);
-    snow.bindPopup(
-        'Snow'+'</br>'
-    ).openPopup(console.log("Snow"));
-
-
-    let newmarker3 = L.marker([44.808147, -68.765013]).addTo(allMarkers).addTo(users);
-    newmarker3.bindPopup(
-        'User: Carl'+'</br>'+'<br/>'+
-        'Status: Safe'+'</br>'
-    ).openPopup(console.log("User"));
-    let newmarker4 = L.marker([45.918147, -68.875013]).addTo(allMarkers).addTo(users);
-    newmarker4.bindPopup(
-        'User: Matty O'+'</br>'+'<br/>'+
-        'Status: AYYYYY HELP '+'</br>'
-    ).openPopup(console.log("User"));
-
-    //EDIT VIEW END
-    let polygons = {
-        'Everything': allMarkers,
-        'Users': users,
-        'shelters': shelters,
-        'Flooding': floodArea,
-        'Fire' :fireArea,
-        'Snow' :snowArea,
-        'Electricity' :electricityArea,
+    legend.onAdd = function (map) {
+        let div = L.DomUtil.create('div', 'info legend');
+        let line_labels = [
+            "Flooding",
+            "Fire",
+            "No Electricity",
+        ];
+        let lines = [1, 2, 3, ];
+        for ( let i=0; i< lines.length; i++){
+            div.innerHTML +=  '<i style="background:' +
+                getLColor(lines[i]) + '"></i>' +
+                '&nbsp;' +line_labels[i] + '&nbsp;<br/>'
+        }
+        return div;
     };
-    let polygonControl = L.control.layers(polygons,null);
 
-    let viewCount = 1;
-    function viewArea() {
+    legend.addTo(map);
 
-        if(viewCount===1){
-            polygonControl.addTo(map);
-            viewCount++;
+
+    let spatialMaps = {
+        'Different Maps:': {
+            'Static View': Esri_WorldTopoMap,
+            'Satelite View': HERE_hybridDay
         }
-        else{
-            map.removeControl(polygonControl);
-            viewCount--;
+    };
+    let markersPolygons = {
+        'User Groups':{
+            'All Markers': allUsers,
+            'Other Users': otherUsers,
+        },
+        'Polygon Types':{
+            'Flooding Polygons': floodingPolygons,
+            'Fire Polygons': firePolygons,
+            'No Electricity Polygons': noElectricityPolygons
         }
+    };
 
-    }
+    console.log('Hello');
+    L.control.groupedLayers(spatialMaps,markersPolygons).addTo(map);
 
 </script>
 </div>
@@ -646,8 +441,15 @@ function chatRoom(){
 
     </script>
 
+<!-- These are here due to asynchronous design-->
+
+<!-- loading in the demo file-->
+<script src="./demo.js"></script>
+<!-- loading in the drawTool file-->
+<script src="drawingTool.js"></script>
 
 
 </body>
+
 
 </html>

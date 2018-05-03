@@ -58,7 +58,7 @@
     }
 }
 .button4 {background-color: #122b40;  value: 'Loc';}
-.button6 {background-color: #1502a8;}
+.button6 {background-color: #0075a8;}
 .button7 {background-color: #5bc0de;}
 .button8 {background-color: #a81d39;}
 .button9 {background-color: #a81d39;}
@@ -416,4 +416,20 @@ button {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+/* legend style */
+.legend {
+    line-height: 15px;
+    background-color: whitesmoke;
+    color: #555;
+    opacity: 0.8;
+}
+.legend i {
+    width: 16px;
+    height: 15px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.8;
+    background-color: whitesmoke;
 }
