@@ -51,6 +51,10 @@
         <button id = "locate" class="button button4" onclick="locate()">Find Me</button>
         <button id = "userSurroundings" class="button button7" onclick="userAttrib()">Surroundings</button>
         <button id = "chat" class="button button6" onclick="chatRoom()">Chat</button>
+
+
+        <!--<button id = "demo" class="button button6" onclick="demo()">Demo</button>-->
+
         <!--This is the label button part of my original idea its out for right now
                 <button id = "label" class="button button6" onclick="PopUp()">Label</button>-->
 
@@ -58,9 +62,6 @@
         <div id="mySidenavAttributes" class="sidenavAttributes" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: large">
 
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <!-- <div id="userAcountNameDIV"style="padding-left: 4%;height: 5%; width: 100%">
-            <label id="userAccountName" style="font-size: larger"> Surrounding Attributes:</label>
-        </div>-->
             <div class="innerNavDIV">
                 <br>
                 <label id="locationStatus" > Location Status:</label>
@@ -160,11 +161,11 @@
 
     //We want users to check if there are multiple
 
-    let floodingUsers = L.layerGroup([]);
-    let floodingPolygons = L.layerGroup([]);
-
-    let fireUsers = L.layerGroup([]);
-    let firePolygons = L.layerGroup([]);
+//    let floodingUsers = L.layerGroup([]);
+//    let floodingPolygons = L.layerGroup([]);
+//
+//    let fireUsers = L.layerGroup([]);
+//    let firePolygons = L.layerGroup([]);
 
 //  let noElectricityUsers = L.layerGroup([]);
 //  let noElectricityPolygons = L.layerGroup([]);
@@ -172,7 +173,7 @@
 
 //  setInterval(floodChecking,10000);
 
-    //Some test markers
+//    Some test markers
     let test1= L.marker(44.899735779894606,-68.66827905178071).addTo(allUsers).addTo(otherUsers);
     let test2= L.marker(44.89972058049875,-68.66799473762514).addTo(allUsers).addTo(otherUsers);
     let test3= L.marker(44.89956858631933,-68.66833269596101).addTo(allUsers).addTo(otherUsers);
@@ -183,9 +184,9 @@
     let test8= L.marker(44.90089852176574,-68.66878867149354).addTo(allUsers).addTo(otherUsers);
     let test9= L.marker(44.900480545368865,-68.66867601871492).addTo(allUsers).addTo(otherUsers);
 
-    console.log(allUsers);
-    console.log(allUsers._layers);
-    console.log(allUsers._layers.length());
+//    console.log(allUsers);
+//    console.log(allUsers._layers);
+//    console.log(allUsers._layers.length());
 
     //This is basic understanding of how we generate polygons
     //First checking if our users are greater than 1
@@ -245,6 +246,31 @@
 //        new polygon =  L.polygon(firePolygons);
 //        }
 //    fireChecking();
+    // function electricalChecking() {
+//
+//            for (let i = 1; i <= allUsers._layers.length();i++) {
+//
+//                //Check if their status is electricals
+//                if (allUsers._layers(i).attribution == 'Electrical') {
+//
+//                    let grabbedUser = allUsers._layers(i).latlng;
+//
+//                    for (let j = 1; j <= allUsers._layers.length(); j++) {
+//                        let secondUser = allUsers._layers(j).latlng;
+//
+//                        //If the indexes are the same we don't want to check the distance between itself
+//
+//                        if (i != j) {
+//                            if (distanceto(grabbedUser, secondUser) <= 50) {
+//                                grabbedUser.addTo(noElectricalPolygons);
+//                            }
+//                        }
+//                    }
+//                }
+//            }
+//        new polygon =  L.polygon(firePolygons);
+//        }
+//    electricalChecking();
 
 //    map.on('click',
 //        function(e){

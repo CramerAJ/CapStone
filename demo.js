@@ -2,10 +2,15 @@
  * Created by ACramer on 5/3/18.
  */
 
+//This demo was causing some crazy issues, so it will generate roughly 100 users
 let firstNames = ['Carl','Andrew','Aly','Matt','Dave','Jason','Tyler','Howard','Lise','Evan','Dennis','Samantha','Sam','Kelly','Chris','Mark','Jess','Jessica','Rebbeca','Rob','Derik'];
 let lastNames = ['Johnson','Turner','Cramer','Davidson','Adams','Person','Spice','Kenny','Milk','Evans','Stephenson','Kramer','Kraemer','Robertson','Jameson'];
-let weather = ['Flooding','Fire','Electrical'];
+let weather = ['Flooding','Fire','Electrical',];
 let allUsersDemo = L.layerGroup([]);
+let floodingDemo = L.layerGroup([]);
+let fireDemo = L.layerGroup([]);
+let electricalDemo = L.layerGroup([]);
+
 function demo() {
 
 
@@ -34,8 +39,6 @@ function demo() {
         ).addTo(map).addTo(allUsersDemo);
 
         if (i === 100){
-
-
             let testIndex = otherUsers.getLayers();
             let latLngArrayList = [];
             for (let j = 0; j <= testIndex.length; j++){
