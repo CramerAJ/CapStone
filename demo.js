@@ -27,7 +27,7 @@ function demo() {
         let geo = [rndCoordinates(44.89408017877255,44.90458303369733 , 7), rndCoordinates(-68.65856075499325, -68.67403173659115, 7)];
 
         L.marker(geo).bindPopup(
-            "User: "+randomNames(firstNames)+ ' '+randomNames(lastNames)
+            "User: "+randomNames(firstNames)+ ''+randomNames(lastNames)
             +'<br>'+'Building Status:'+ ''+checkedLocation+ '<br>'
             +'<br>'+'Weather Type:'+ randomDisaster(weather)+ '<br>'
             +'<br>'+'Pictures:'

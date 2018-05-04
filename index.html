@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="maxcdn.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.3/css/bootstrap-select.min.css" />
     <link rel="stylesheet" href="leafletManual.css"/>
+    <!--<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.3.0/dist/">-->
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -49,10 +50,9 @@
 
         <button id = "locate" class="button button4" onclick="locate()">Find Me</button>
         <button id = "userSurroundings" class="button button7" onclick="userAttrib()">Surroundings</button>
-        <button id = "chat" class="button button9" onclick="chatRoom()">Chat</button>
+        <button id = "chat" class="button button6" onclick="chatRoom()">Chat</button>
         <!--This is the label button part of my original idea its out for right now
                 <button id = "label" class="button button6" onclick="PopUp()">Label</button>-->
-
 
 
         <div id="mySidenavAttributes" class="sidenavAttributes" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: large">
@@ -132,25 +132,137 @@
     //Making it the base map on run
     Esri_WorldTopoMap.addTo(map);
 
-    //Declaring Differ LayerGroups:
+    //Declaring a clustering tool here, turned it off
+
+    // //pretty much you just add a layergroup to this and then call off this output for clustering
+    // var markers = L.markerClusterGroup({
+    //        spiderfyOnMaxZoom: false,
+    //        showCoverageOnHover: false,
+    //        zoomToBoundsOnClick: false
+    //    });
+    //Not entirely sure how to include the query code, alot of it was just used to test and see I could store and call in data
+    //Most testing was with creating polygons
+
+    //Created a small test scenario, may throw errors
+
+    //We query in the information here and sort it adding all users to the allUsers, excluding our current user based on the id
+    //SELECT * FROM `allUsers` WHERE id != null
+    //  SELECT * FROM 'USERS' WHERE ID != null
+    //      SELECT * FROM 'Marker_coord' WHERE id
+
+
+    //SELECT * FROM 'markrers' WHERE Marker_coord != null
+
+    //Declaring Different LayerGroups Here:
 
     let allUsers = L.layerGroup([]);
     let otherUsers = L.layerGroup([]);
-    let floodingPolygons = L.layerGroup([]);
-    let firePolygons = L.layerGroup([]);
-    let noElectricityPolygons = L.layerGroup([]);
 
+    //We want users to check if there are multiple
+
+    let floodingUsers = L.layerGroup([]);
+    let floodingPolygons = L.layerGroup([]);
+
+    let fireUsers = L.layerGroup([]);
+    let firePolygons = L.layerGroup([]);
+
+//  let noElectricityUsers = L.layerGroup([]);
+//  let noElectricityPolygons = L.layerGroup([]);
+//  let declardSafeZones = L.layerGroup([]);
+
+//  setInterval(floodChecking,10000);
+
+    //Some test markers
+    let test1= L.marker(44.899735779894606,-68.66827905178071).addTo(allUsers).addTo(otherUsers);
+    let test2= L.marker(44.89972058049875,-68.66799473762514).addTo(allUsers).addTo(otherUsers);
+    let test3= L.marker(44.89956858631933,-68.66833269596101).addTo(allUsers).addTo(otherUsers);
+    let test4= L.marker(44.89958758561373,-68.66959869861604).addTo(allUsers).addTo(otherUsers);
+    let test5= L.marker(44.899291195906116,-68.66959869861604).addTo(allUsers).addTo(otherUsers);
+    let test6= L.marker(44.89996377035008,-68.67029070854188).addTo(allUsers).addTo(otherUsers);
+    let test7= L.marker(44.90076552960544,-68.67024779319765).addTo(allUsers).addTo(otherUsers);
+    let test8= L.marker(44.90089852176574,-68.66878867149354).addTo(allUsers).addTo(otherUsers);
+    let test9= L.marker(44.900480545368865,-68.66867601871492).addTo(allUsers).addTo(otherUsers);
+
+    console.log(allUsers);
+    console.log(allUsers._layers);
+    console.log(allUsers._layers.length());
+
+    //This is basic understanding of how we generate polygons
+    //First checking if our users are greater than 1
+    //From there we grab another user, and check the distance between the two
+    //If it exceeds the distance we do nothing
+    //If it crosses it then we add them to the floodingPolygons group
+
+//    function floodChecking() {
+//
+//            for (let i = 1; i <= allUsers._layers.length();i++) {
+//
+//                //Check if their status is flooding
+//                //think I broke something when trying to add alot of test userss
+//                if (allUsers._layers(i).attribution == 'Flooding') {
+//
+//                    let grabbedUser = allUsers._layers(i).latlng;
+//
+//                    for (let j = 1; j <= allUsers._layers.length(); j++) {
+//                        let secondUser = allUsers._layers(j).latlng;
+//
+//                        //If the indexes are the same we don't want to check the distance between itself or add it twcie
+//
+//                        if (i != j) {
+//                            if (distanceto(grabbedUser, secondUser) <= 50) {
+//                                grabbedUser.addTo(floodPolygons);
+//                            }
+//                        }
+//                    }
+//                }
+//            }
+//
+//        }
+//
+//    floodChecking();
+//    function fireChecking() {
+//
+//            for (let i = 1; i <= allUsers._layers.length();i++) {
+//
+//                //Check if their status is flooding
+//                if (allUsers._layers(i).attribution == 'Fire') {
+//
+//                    let grabbedUser = allUsers._layers(i).latlng;
+//
+//                    for (let j = 1; j <= allUsers._layers.length(); j++) {
+//                        let secondUser = allUsers._layers(j).latlng;
+//
+//                        //If the indexes are the same we don't want to check the distance between itself
+//
+//                        if (i != j) {
+//                            if (distanceto(grabbedUser, secondUser) <= 50) {
+//                                grabbedUser.addTo(firePolygons);
+//                            }
+//                        }
+//                    }
+//                }
+//            }
+//        new polygon =  L.polygon(firePolygons);
+//        }
+//    fireChecking();
+
+//    map.on('click',
+//        function(e){
+//            let coord = e.latlng.toString().split(',');
+//            let lat = coord[0].split('(');
+//            let lng = coord[1].split(')');
+//            L.marker(e.latlng).addTo(map);
+//
+//            console.log(L.marker(e.latlng));
+//        });
+//
 
     // Locating User Tool
-
     let currentPosition, currLatlngObject;
     let currentLatlng = [];
 
     let checkedLocation;
-//    let confirmedFire;
-//    let confirmedSnow;
-//    let confirmedFlooding ;
-//    let images;
+
 
     function closeNav() {
         let checkedLocation = $('.statusRadio:checked').val();
@@ -173,7 +285,7 @@
             map.removeLayer(currentPosition);
         }
 
-        currentPosition = L.marker(e.latlng,{title: "Location", draggable: false, color: "red"}).addTo(otherUsers).addTo(allUsers).addTo(map);
+        currentPosition = L.marker(e.latlng,{title: "Location", draggable: false, color: "red"}).addTo(allUsers).addTo(map);
 
         currLatlngObject = currentPosition._latlng;
 
@@ -189,6 +301,7 @@
         console.log('Found');
 
     }
+
     //Locating Error Function
     function onLocationError(e) {
         console.log("Unable to Locate");
@@ -208,6 +321,8 @@
     }
 
 
+
+    //GIS Address Searching
     let results = L.layerGroup().addTo(map);
     //GeoSearch plugin
     let searchControl = L.esri.Geocoding.geosearch().addTo(map);
@@ -283,16 +398,46 @@
     };
 
     console.log('Hello');
+
     L.control.groupedLayers(spatialMaps,markersPolygons).addTo(map);
+
+
+    //Old code looking into pulling tiles and checking them for users
+
+//     let testUsers = L.layergroup([]);
+    //  L.GridLayer.DebugCoords = L.GridLayer.extend({
+//    createTile: function (coords) {
+//        var tile = document.createElement('div');
+//        tile.innerHTML = [coords.x, coords.y, coords.z].join(', ');
+//        tile.style.outline = '1px solid red';
+//        return tile;
+//    }
+//    });
+//
+//    L.gridLayer.debugCoords = function(opts) {
+//        return new L.GridLayer.DebugCoords(opts);
+//    };
+//    createTile: function (coords, done) {
+//        var tile = document.createElement('div');
+//        tile.innerHTML = [coords.x, coords.y, coords.z].join(', ');
+//        tile.style.outline = '1px solid red';
+//
+//        setTimeout(function () {
+//            done(null, tile);	// Syntax is 'done(error, tile)'
+//        }, 500 + Math.random() * 1500);
+//
+//        return tile;
+//    }
+//    map.addLayer( L.gridLayer.debugCoords() );
 
 </script>
 </div>
-<div id="chatRoom_html" style="overflow: scroll">
+<div id="chatRoom_html" class="sidenavAttributes" style="border: solid; overflow: scroll">
 
-    <div class="members-count"></div>
-    <div class="members-list"></div>
-    <div class="messages"></div>
-    <form class="message-form" onsubmit="return false;">
+    <div class="members-count" style="width: 90%;right: 10%;"></div>
+    <div class="members-list " style="width: 90%;left: 10%;"></div>
+    <div class="messages" style="width: 90%;left: 10%;"></div>
+    <form class="message-form" style="width: 90%;left: 10%;" onsubmit="return false;">
         <input class="message-form__input" placeholder="Type a message.." type="text"/>
         <input class="message-form__button" value="Send" type="submit"/>
     </form>
@@ -441,8 +586,9 @@ function chatRoom(){
 
     </script>
 
-<!-- These are here due to asynchronous design-->
 
+
+<!-- These are here due to asynchronous design-->
 <!-- loading in the demo file-->
 <script src="./demo.js"></script>
 <!-- loading in the drawTool file-->
@@ -450,6 +596,4 @@ function chatRoom(){
 
 
 </body>
-
-
 </html>

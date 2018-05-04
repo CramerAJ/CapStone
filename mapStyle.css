@@ -60,11 +60,6 @@
 .button4 {background-color: #122b40;  value: 'Loc';}
 .button6 {background-color: #0075a8;}
 .button7 {background-color: #5bc0de;}
-.button8 {background-color: #a81d39;}
-.button9 {background-color: #a81d39;}
-.button10 {background-color: #a81d39;}
-.button11 {background-color: #a81d39;}
-.button12 {background-color: #a81d39;}
 
 .sidenav {
     height: 100%;
@@ -107,7 +102,7 @@
     min-height: 100%;
     padding: 18% 0 0;
     margin: auto;
-    background: url("backgroundImage.jpg") no-repeat;
+    background: url("images/backgroundImage.jpg") no-repeat;
     background-size: 100%;
 
 }
@@ -209,7 +204,7 @@
 
     bottom: 25%;
     width: 50%;
-    height: 45%;
+    height: 90%;
     z-index: 1000;
     left: 50%;
     position: absolute;
@@ -277,10 +272,6 @@ button {
     .sidenavAttributes {padding-top: 15px;}
     .sidenavAttributes a {font-size: 18px;}
 }
-
-
-
-
 
 
 /* The statusRadioButton */

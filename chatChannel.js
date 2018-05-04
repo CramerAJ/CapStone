@@ -1,6 +1,7 @@
 /**
  * Created by ACramer on 11/29/17.
  */
+//This code was open source, but needed to change out a bit inorder to get it to connect on the web-app
 
 const CHANNEL_ID = '1P0WDU30D2ZXAdNG';
 const drone = new ScaleDrone(CHANNEL_ID, {
@@ -60,13 +61,9 @@ drone.on('error', error => {
 });
 
 function getRandomName() {
-    const adjs = ['Cramers'];
-    const nouns = ['4-iron','5-iron','6-iron','7-iron','8-iron','9-iron','5-Wood','3-Wood','Driver','Putter'];
-    return (
-        adjs[Math.floor(Math.random() * adjs.length)] +
-        "_" +
-        nouns[Math.floor(Math.random() * nouns.length)]
-    );
+    const adjs = ['Test Name Filler'];
+
+    return (adjs[Math.floor(Math.random() * adjs.length)] );
 }
 
 function getRandomColor() {
