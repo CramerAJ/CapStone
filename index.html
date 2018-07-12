@@ -49,18 +49,18 @@
     <div id="headerImage" style="z-index: 1000; background-color: white; width: 100%;" class="headcontainer" >
 
         <button id = "locate" class="button button4" onclick="locate()">Find Me</button>
-        <button id = "userSurroundings" class="button button7" onclick="userAttrib()">Surroundings</button>
-        <button id = "chat" class="button button6" onclick="chatRoom()">Chat</button>
+        <button id = "userSurroundings" class="button button7" onclick="userAttrib()">Share Status</button>
+        <!--<button id = "chat" class="button button6" onclick="chatRoom()">Chat</button>-->
 
+       <button id = "demo" class="button button6" onclick="demo()">Demo</button>
+ <!--  <button id = "label" class="button button6" onclick="PopUp()">Label</button>-->
 
-        <!--<button id = "demo" class="button button6" onclick="demo()">Demo</button>-->
-
-        <!--This is the label button part of my original idea its out for right now
-                <button id = "label" class="button button6" onclick="PopUp()">Label</button>-->
 
 
         <div id="mySidenavAttributes" class="sidenavAttributes" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: large">
 
+            <br>
+            <br>
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="innerNavDIV">
                 <br>
@@ -271,18 +271,16 @@
 //        new polygon =  L.polygon(firePolygons);
 //        }
 //    electricalChecking();
-
+//
 //    map.on('click',
 //        function(e){
 //            let coord = e.latlng.toString().split(',');
 //            let lat = coord[0].split('(');
 //            let lng = coord[1].split(')');
 //            L.marker(e.latlng).addTo(map);
-//
 //            console.log(L.marker(e.latlng));
 //        });
-//
-    
+
     // Locating User Tool
     let currentPosition, currLatlngObject;
     let currentLatlng = [];

@@ -25,15 +25,15 @@
 //    function polygonCreation(){
 //        console.log("checking for similar marker types");
 //    }
-    map.on('click',
-    	function(e){
-    		let coord = e.latlng.toString().split(',');
-    		let lat = coord[0].split('(');
-    		let lng = coord[1].split(')');
-    		L.marker(e.latlng).addTo(map);
-
-    		console.log(L.marker(e.latlng));
-    	});
+//     map.on('click',
+//     	function(e){
+//     		let coord = e.latlng.toString().split(',');
+//     		let lat = coord[0].split('(');
+//     		let lng = coord[1].split(')');
+//     		L.marker(e.latlng).addTo(map);
+//
+//     		console.log(L.marker(e.latlng));
+//     	});
 
 
 

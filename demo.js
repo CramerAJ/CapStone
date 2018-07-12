@@ -7,9 +7,9 @@ let firstNames = ['Carl','Andrew','Aly','Matt','Dave','Jason','Tyler','Howard','
 let lastNames = ['Johnson','Turner','Cramer','Davidson','Adams','Person','Spice','Kenny','Milk','Evans','Stephenson','Kramer','Kraemer','Robertson','Jameson'];
 let weather = ['Flooding','Fire','Electrical',];
 let allUsersDemo = L.layerGroup([]);
-let floodingDemo = L.layerGroup([]);
-let fireDemo = L.layerGroup([]);
-let electricalDemo = L.layerGroup([]);
+// let floodingDemo = L.layerGroup([]);
+// let fireDemo = L.layerGroup([]);
+// let electricalDemo = L.layerGroup([]);
 
 function demo() {
 
@@ -29,13 +29,13 @@ function demo() {
 
     for (let i = 0; i <= 100; i++) {
 
-        let geo = [rndCoordinates(44.89408017877255,44.90458303369733 , 7), rndCoordinates(-68.65856075499325, -68.67403173659115, 7)];
+        let geo = [rndCoordinates(40.74090859357368,40.742383972865056 , 7), rndCoordinates(-73.99281799793245, -73.99409472942354, 7)];
 
         L.marker(geo).bindPopup(
-            "User: "+randomNames(firstNames)+ ''+randomNames(lastNames)
-            +'<br>'+'Building Status:'+ ''+checkedLocation+ '<br>'
-            +'<br>'+'Weather Type:'+ randomDisaster(weather)+ '<br>'
-            +'<br>'+'Pictures:'
+            "Test User: "+randomNames(firstNames)+ ''+randomNames(lastNames)+'<br>'
+            +'<br>'+'Location Status:'+ 'Not Labeled'+ '<br>'
+            +'<br>'+'Nearby Weather/Hazard Type:'+ randomDisaster(weather)+ '<br>'
+            +'<br>'+'Pictures: None'
         ).addTo(map).addTo(allUsersDemo);
 
         if (i === 100){
